@@ -1,0 +1,30 @@
+{
+  "applications": [
+    {
+      "fullName": "Leman Menefova",
+      "email": "menefovaa21@gmail.com",
+      "phone": "0506817618",
+      "address": "Yasamal Rayonu",
+      "education": "on",
+      "job": "Programmer",
+      "id": "lLMWkA7Dnyc"
+    },
+    {
+      "fullName": "",
+      "email": "",
+      "phone": "",
+      "address": "",
+      "id": "20rE03uELhg"
+    },
+    {
+      "fullName": "Aytac Mirzeyeva",
+      "email": "mirzeyevaa91@gmail.com",
+      "phone": "0506817618",
+      "address": "Yasamal Rayonu",
+      "education": "Bachelor",
+      "job": "Programmer",
+      "id": "wrQM9WFj_eY"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

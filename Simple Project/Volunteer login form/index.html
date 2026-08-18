@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velora Register Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="bg_image"></div>
+    <div>
+        <form class="form">
+            <label for="">Full Name</label>
+       <input type="text" id="fullname" placeholder="Your Name...">
+<label for="">Email</label>
+<input type="email" id="email" placeholder="Email...">
+<label for="">Date of Birth</label>
+<input type="datetime-local" name="" id="">
+<h3>Gender</h3>
+<div class="radio-group">
+    <label><input type="radio" name="gender"> Man</label>
+    <label><input type="radio" name="gender"> Woman</label>
+</div>
+<label for="">Your Phone Number</label>
+<input type="tel" id="phone">
+<label for="">Your Adress</label>
+<input type="text" id="address">
+<label for="">Education place</label>
+<input type="text">
+<h3>Your Education</h3>
+<div class="radio-group">
+   <label>
+    <input type="radio" name="education" value="Bachelor">
+    Bachelor
+</label>
+
+<label>
+    <input type="radio" name="education" value="Master">
+    Master
+</label>
+
+<label>
+    <input type="radio" name="education" value="None">
+    None
+</label>
+</div>
+<label for="">Why do you work us?</label>
+<input type="text">
+<label for="">Your work Experience</label>
+<input type="text">
+<h3>Your Choose Work</h3>
+<div class="radio-group">
+  <label><input type="radio" name="job" value="Project Manager"> Project Manager</label>
+<label><input type="radio" name="job" value="Data Analyst"> Data Analyst</label>
+<label><input type="radio" name="job" value="Programmer"> Programmer</label>
+<label><input type="radio" name="job" value="Cashier"> Cashier</label>
+<label><input type="radio" name="job" value="Waitress"> Waitress</label>
+</div>
+<h3>Your Cv</h3>
+<input type="file">
+<button type="submit">Submit Application</button>
+    <p class="message"></p>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

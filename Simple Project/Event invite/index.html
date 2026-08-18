@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurant Grand Opening Invitation</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Olive Garden Bistro</h1>
+
+<h2>Grand Opening • September 15, 2026</h2>
+
+<p>
+Join us as we celebrate the opening of our brand-new restaurant.
+Enjoy delicious cuisine, live music, exclusive opening offers,
+and an unforgettable evening with family and friends.
+</p>
+
+<div class="info">
+
+<div class="card">
+<h3>📍 Location</h3>
+<p>123 Riverside Avenue<br>Downtown City</p>
+</div>
+
+<div class="card">
+<h3>🕒 Time</h3>
+<p>6:00 PM - 10:00 PM</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="rsvp">
+
+<div class="form-container">
+
+<h2>RSVP</h2>
+
+<form id="rsvpForm">
+
+<div class="input-group">
+<label>First Name</label>
+<input type="text" id="first">
+<div class="error" id="firstError"></div>
+</div>
+
+<div class="input-group">
+<label>Last Name</label>
+<input type="text" id="last">
+<div class="error" id="lastError"></div>
+</div>
+
+<div class="input-group">
+<label>Email Address</label>
+<input type="email" id="email">
+<div class="error" id="emailError"></div>
+</div>
+
+<div class="input-group">
+<label>Will you attend?</label>
+
+<div class="radio-group">
+
+<label>
+<input type="radio" name="attend" value="Yes">
+ Yes
+</label>
+
+<label>
+<input type="radio" name="attend" value="No">
+ No
+</label>
+
+</div>
+
+<div class="error" id="attendError"></div>
+
+</div>
+
+<div class="input-group hidden" id="messageBox">
+
+<label>Message / Special Request</label>
+
+<textarea rows="5"
+placeholder="Any dietary preferences or special requests?"></textarea>
+
+</div>
+
+<button type="submit">
+Submit RSVP
+</button>
+
+<div class="success" id="successMessage">
+🎉 Thank you! Your RSVP has been submitted successfully.
+</div>
+
+</form>
+
+</div>
+
+</section>
+<script src="./script.js"></script>
+</body>
+</html>
