@@ -1,0 +1,348 @@
+{
+  "categories": [
+    {
+      "name": "Geyim",
+      "count": "1,234",
+      "image": "https://cdn-cloudflare.emporium.az/women/triple-banner-1.jpg",
+      "link": "/category/geyim",
+      "id": "8ZPmLNlc15E"
+    },
+    {
+      "name": "Ayaqqabı",
+      "count": "856",
+      "image": "https://content.asos-media.com/-/media/homepages/ww/2026/may/18-row-hp/features/summershoes.jpg",
+      "link": "/category/ayaqqabi",
+      "id": "3YJdhjVqKf4"
+    },
+    {
+      "name": "Çantalar",
+      "count": "432",
+      "image": "https://cdn-cloudflare.emporium.az/instagram/instagram-6.jpg",
+      "link": "/category/cantalar",
+      "id": "Yqw5JTLzgV4"
+    },
+    {
+      "name": "Aksesuar",
+      "count": "987",
+      "image": "https://cdn-cloudflare.emporium.az/jewellery/main-banner-desktop.jpg",
+      "link": "/category/kosmetika",
+      "id": "G_WzN9-FtE0"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Shirt",
+      "category": "Clothes",
+      "price": 15,
+      "count": 1,
+      "image": "https://ozmaofcalifornia.com/cdn/shop/files/OZMA_S25_3511.jpg?v=1769638877&width=1400"
+    },
+    {
+      "name": "Top",
+      "price": 15,
+      "category": "Clothes",
+      "image": "https://ozmaofcalifornia.com/cdn/shop/files/OZMA_S25_0556.jpg?v=1770678709&width=700",
+      "description": "",
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "name": "Sweatshirt",
+      "category": "Clothes",
+      "price": 20,
+      "count": 1,
+      "image": "https://ozmaofcalifornia.com/cdn/shop/files/OZMA_S25_3039.jpg?v=1771891638&width=700"
+    },
+    {
+      "id": "4",
+      "name": "T-shirt",
+      "category": "Clothes",
+      "price": 10,
+      "count": 1,
+      "image": "https://ozmaofcalifornia.com/cdn/shop/files/OZMA_S25_1184.jpg?v=1770747206&width=700"
+    },
+    {
+      "id": "5",
+      "name": "Dress",
+      "category": "Clothes",
+      "price": 30,
+      "count": 1,
+      "image": "https://images.asos-media.com/products/mango-cowl-neck-mesh-maxi-dress-in-red-floral-print/211007657-2?$n_480w$&wid=476&fit=constrain"
+    },
+    {
+      "id": "6",
+      "name": "Shirt",
+      "category": "Clothes",
+      "price": 25,
+      "count": 1,
+      "image": "https://ozmaofcalifornia.com/cdn/shop/files/OZMA_POPLIN_4.jpg?v=1776108981&width=700"
+    },
+    {
+      "id": "7",
+      "name": "T-shirt",
+      "category": "Clothes",
+      "price": 12,
+      "count": 1,
+      "image": "https://ozmaofcalifornia.com/cdn/shop/files/OZMA_S25_0065.jpg?v=1768970226&width=700"
+    },
+    {
+      "id": "8",
+      "name": "T-shirt",
+      "category": "Clothes",
+      "price": 10,
+      "count": 1,
+      "image": "https://ozmaofcalifornia.com/cdn/shop/files/OZMA_POPLIN_259.jpg?v=1776115948&width=700"
+    },
+    {
+      "id": "9",
+      "name": "Shoes",
+      "category": "Shoes",
+      "price": 60,
+      "count": 1,
+      "image": "https://images.asos-media.com/products/mango-lace-heeled-mule-in-cream/211046534-2?$n_480w$&wid=476&fit=constrain"
+    },
+    {
+      "id": "10",
+      "name": "Dress",
+      "category": "Clothes",
+      "price": 40,
+      "count": 1,
+      "image": "https://images.asos-media.com/products/mango-satin-cowl-neck-asymmetric-midi-dress-in-burnt-orange/211007787-1-orange?$n_480w$&wid=476&fit=constrain"
+    },
+    {
+      "id": "11",
+      "name": "Costume",
+      "category": "Clothes",
+      "price": 50,
+      "count": 1,
+      "image": "https://images.asos-media.com/products/mango-iguana-tailored-blazer-trouser-co-ord-in-pastel-yellow/210606010-3?$n_480w$&wid=476&fit=constrain"
+    },
+    {
+      "name": "Tote Bag",
+      "price": 30,
+      "category": "Bags",
+      "image": "https://images.asos-media.com/products/mango-minimal-faux-leather-tote-bag-in-cherry-red/210465025-1-cherryred?$n_480w$&wid=476&fit=constrain",
+      "description": "",
+      "id": "12"
+    },
+    {
+      "id": "13",
+      "name": "Tote Bag",
+      "category": "Bags",
+      "price": 25,
+      "count": 1,
+      "image": "https://images.asos-media.com/products/mango-bowling-bag-with-key-chain-in-brown/210633341-1-brown?$n_480w$&wid=476&fit=constrain"
+    },
+    {
+      "id": "14",
+      "name": "Blouse",
+      "category": "Clothes",
+      "price": 12,
+      "count": 1,
+      "image": "https://images.asos-media.com/products/mango-one-shoulder-long-sleeve-cinched-waist-blouse-in-pale-blue/210605969-1-paleblue?$n_480w$&wid=476&fit=constrain"
+    },
+    {
+      "id": "15",
+      "name": "Jeans",
+      "category": "Clothes",
+      "price": 35,
+      "count": 1,
+      "image": "https://images.asos-media.com/products/mango-eva-mid-rise-straight-leg-denim-jean-co-ord-in-light-blue/211045816-1-lightblue?$n_480w$&wid=476&fit=constrain"
+    },
+    {
+      "id": "16",
+      "name": "Dress",
+      "category": "Clothes",
+      "price": 45,
+      "count": 1,
+      "image": "https://images.asos-media.com/products/mango-seam-detail-square-neck-maxi-dress-in-pastel-blue/210693285-1-blue?$n_480w$&wid=476&fit=constrain"
+    },
+    {
+      "id": "17",
+      "name": "Shirt",
+      "category": "Clothes",
+      "price": 10,
+      "count": 1,
+      "image": "https://images.asos-media.com/products/mango-cotton-rich-tie-front-t-shirt-in-butter-yellow/211007123-2?$n_480w$&wid=476&fit=constrain"
+    },
+    {
+      "id": "18",
+      "name": "Shoes",
+      "category": "Shoes",
+      "price": 45,
+      "count": 1,
+      "image": "https://images.asos-media.com/products/asos-design-porscha-cross-over-detail-high-heel-shoes-in-gold/209613585-1-gold?$n_480w$&wid=476&fit=constrain"
+    },
+    {
+      "id": "19",
+      "name": "Shoes",
+      "category": "Shoes",
+      "price": 75,
+      "count": 1,
+      "image": "https://images.asos-media.com/products/asos-design-nali-barely-there-heeled-sandals-in-black-pu/204989589-1-black?$n_480w$&wid=476&fit=constrain"
+    },
+    {
+      "id": "20",
+      "name": "Accessory",
+      "category": "Accessories",
+      "price": 10,
+      "count": 1,
+      "image": "https://cdn-cloudflare.emporium.az/jewellery/triple-banner-1.jpg"
+    },
+    {
+      "id": "21",
+      "name": "Accessory",
+      "category": "Accessories",
+      "price": 10,
+      "count": 1,
+      "image": "https://cdn-cloudflare.emporium.az/jewellery/triple-banner-2.jpg"
+    },
+    {
+      "id": "22",
+      "name": "Accessory",
+      "category": "Accessories",
+      "price": 12,
+      "count": 1,
+      "image": "https://cdn-cloudflare.emporium.az/jewellery/triple-banner-3.jpg"
+    },
+    {
+      "id": "23",
+      "name": "Accessory",
+      "category": "Accessories",
+      "price": 25,
+      "count": 1,
+      "image": "https://cdn-cloudflare.emporium.az/jewellery/sub-menu-necklaces.jpg"
+    },
+    {
+      "id": "24",
+      "name": "Accessory",
+      "category": "Accessories",
+      "price": 10,
+      "count": 1,
+      "image": "https://cdn-cloudflare.emporium.az/jewellery/one-banner.jpg"
+    }
+  ],
+  "users": [
+    {
+      "name": "Fidan",
+      "surname": "Fidanova",
+      "email": "fidan2006@gmail.com",
+      "pass": "Fidan2001",
+      "id": "VAnH68YEG6I"
+    },
+    {
+      "name": "Aytac",
+      "surname": "Mirzeyeva",
+      "email": "mirzeyevaa91@gmail.com",
+      "pass": "Aytac2006",
+      "id": "zulieZgefog"
+    },
+    {
+      "name": "Aytac",
+      "surname": "Mirzeyeva",
+      "email": "mirzeyevaa91@gmail.com",
+      "pass": "Aytac2006",
+      "id": "-tmvpoLAjdw"
+    },
+    {
+      "name": "Aytac",
+      "surname": "Mirzeyeva",
+      "email": "mirzeyevaa91@gmail.com",
+      "pass": "Aytac2006",
+      "id": "uHpf35txkzc"
+    },
+    {
+      "name": "Aytac",
+      "surname": "Mirzeyeva",
+      "email": "mirzeyevaa91@gmail.com",
+      "pass": "Aytac2006",
+      "id": "zXaxFrovra4"
+    },
+    {
+      "name": "Aytac",
+      "surname": "Mirzeyeva",
+      "email": "mirzeyevaa91@gmail.com",
+      "pass": "Aytac2006",
+      "id": "XRB_Y6C9Wa8"
+    },
+    {
+      "name": "Aytac",
+      "surname": "Mirzeyeva",
+      "email": "mirzeyevaa91@gmail.com",
+      "pass": "Aytac2006",
+      "id": "KH9Ocu3jRuc"
+    },
+    {
+      "name": "Aytac",
+      "surname": "Mirzeyeva",
+      "email": "mirzeyevaa91@gmail.com",
+      "pass": "Aytac2006",
+      "id": "M2bQePL8pUw"
+    }
+  ],
+  "collection": [
+    {
+      "img1": "https://images.asos-media.com/products/asos-design-super-scoop-cami-sculpted-maxi-dress-in-black-scuba-style-fabric/210104276-2?$n_480w$&wid=476&fit=constrain",
+      "img2": "https://images.asos-media.com/products/asos-design-heroic-minimal-strappy-heeled-sandals-in-chocolate/210121375-1-chocolate?$n_480w$&wid=476&fit=constrain",
+      "img3": "https://images.asos-media.com/products/kaiia-exclusive-linen-square-neck-gathered-asymmetric-longline-top-and-wide-leg-trousers-co-ord-in-cream/210388210-2?$n_480w$&wid=476&fit=constrain",
+      "img4": "https://images.asos-media.com/products/pasq-diagonal-flap-grab-bag-with-crossbody-strap-in-chocolate-brown/207587812-1-brown?$n_480w$&wid=476&fit=constrain",
+      "img5": "https://images.asos-media.com/products/asos-design-choker-necklace-with-crystal-cupchain-and-faux-pearl-design-in-silver-tone/207240832-1-silver?$n_480w$&wid=476&fit=constrain",
+      "img6": "https://images.asos-media.com/products/princess-polly-as-you-are-shirred-waist-button-up-shirt-in-baby-blue/210284983-1-babyblue?$n_480w$&wid=476&fit=constrain",
+      "img7": "https://images.asos-media.com/products/asos-design-volume-detail-midi-skirt-in-dark-camel/208531465-1-darkcamel?$n_480w$&wid=476&fit=constrain",
+      "img8": "https://images.asos-media.com/products/asos-design-tailored-fishtail-maxi-skirt-co-ord-in-cream/210192364-1-cream?$n_480w$&wid=326&fit=constrain",
+      "id": "NTjVluU5D-U"
+    }
+  ],
+  "necollection": [
+    {
+      "name": "Dress",
+      "category": "New",
+      "price": 55,
+      "count": 1,
+      "image": "https://images.asos-media.com/products/asos-design-super-scoop-cami-sculpted-maxi-dress-in-black-scuba-style-fabric/210104276-2?$n_480w$&wid=476&fit=constrain",
+      "id": "wlvStFbrv9c"
+    },
+    {
+      "name": "Shoes",
+      "category": "New",
+      "price": 60,
+      "count": 1,
+      "image": "https://images.asos-media.com/products/asos-design-heroic-minimal-strappy-heeled-sandals-in-chocolate/210121375-1-chocolate?$n_480w$&wid=476&fit=constrain",
+      "id": "-43Ksgtfa1M"
+    },
+    {
+      "name": "Shirt",
+      "category": "New",
+      "price": 75,
+      "count": 1,
+      "image": "https://images.asos-media.com/products/kaiia-exclusive-linen-square-neck-gathered-asymmetric-longline-top-and-wide-leg-trousers-co-ord-in-cream/210388210-2?$n_480w$&wid=476&fit=constrain",
+      "id": "L87HL8Akeuc"
+    },
+    {
+      "name": "Shirt",
+      "category": "New",
+      "price": 45,
+      "count": 1,
+      "image": "https://images.asos-media.com/products/pasq-diagonal-flap-grab-bag-with-crossbody-strap-in-chocolate-brown/207587812-1-brown?$n_480w$&wid=476&fit=constrain",
+      "id": "-xe5fyuw-zA"
+    },
+    {
+      "name": "Accesory",
+      "category": "New",
+      "price": 35,
+      "count": 1,
+      "image": "https://images.asos-media.com/products/asos-design-choker-necklace-with-crystal-cupchain-and-faux-pearl-design-in-silver-tone/207240832-1-silver?$n_480w$&wid=476&fit=constrain",
+      "id": "3HakQF-CiJc"
+    },
+    {
+      "name": "T-shirt",
+      "category": "New",
+      "price": 35,
+      "count": 1,
+      "image": "https://images.asos-media.com/products/princess-polly-as-you-are-shirred-waist-button-up-shirt-in-baby-blue/210284983-1-babyblue?$n_480w$&wid=476&fit=constrain",
+      "id": "fH8FRfahvqc"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
