@@ -29,6 +29,7 @@ const handleRegsiter=(e:React.FormEvent<HTMLFormElement>)=>{
     console.log(user); 
     setSuccess("Register is successfully");
 } 
+ 
     return ( 
 <> 
  <div className="min-h-screen bg-[#fff5f8] flex items-center justify-center p-6">

@@ -6,6 +6,7 @@ import Joinclass from "./pages/Joinclass"
 import Footer from "./pages/Footer"
 import Register from "./login/Register"
 import { Route,Routes } from "react-router-dom"
+import Exploreclass from "./pages/Exploreclass"
 function App(){
   return (
     <>
@@ -25,6 +26,7 @@ function App(){
         />
 
         <Route path="/register" element={<Register />} />
+        <Route path="/exploreclass" element={<Exploreclass/>}/>
       </Routes>
   
     </>

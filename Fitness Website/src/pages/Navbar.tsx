@@ -6,10 +6,18 @@ function Navbar(){
     EVOGYM
   </a>
   <ul className="md:flex gap-9 items-center text-white list-none font-bold text-lg hidden ">
-    <li>Home</li>
-    <li>About</li>
-    <li>Our Classes</li>
-    <li>Contact Us</li>
+  <li>
+  <a href="#home">Home</a>
+</li>
+<li>
+<a href="#about">About</a>
+</li>
+<li>
+<a href="#classes">Our Classes</a>
+</li>
+<li>
+<a href="#join">Contact Us</a>
+</li>
   </ul>
   <div className="flex gap-3">
     <Link to="/register">

@@ -1,7 +1,7 @@
 function Joinclass(){
     return (
         <>
-        <section className="w-full bg-white py-10 md:py-16">
+        <section className="w-full bg-white py-10 md:py-16" id="join">
       <div className="mx-auto grid w-[84%] max-w-362.5 grid-cols-1 gap-8 lg:grid-cols-[1.55fr_1fr]">
     
         <div>

@@ -1,24 +1,65 @@
 {
-    "gym":[
-        {
-            "id":1,
-        "title":"gym",
-        "img":"image1"
-        },
-        {
-            "id":2,
-            "title":"gym",
-        "img":"image2"
-        },
-        {
-            "id":3,
-            "title":"gym",
-        "img":"image3"
-        },
-        {
-            "id":4,
-            "title":"gym",
-        "img":"image4"
-        }
-    ]
+  "gym": [
+    {
+      "id": 1,
+      "title": "Strength Training",
+      "description": "Build strength and improve your overall fitness with our powerful strength training sessions.",
+      "img": "image1",
+      "instructor": "Sarah Wilson",
+      "duration": 45,
+      "level": "Beginner",
+      "category": "Strength"
+    },
+    {
+      "id": 2,
+      "title": "Cardio Blast",
+      "description": "Boost your energy and endurance with an exciting high-intensity cardio workout.",
+      "img": "image2",
+      "instructor": "Emma Brown",
+      "duration": 40,
+      "level": "Intermediate",
+      "category": "Cardio"
+    },
+    {
+      "id": 3,
+      "title": "Morning Yoga",
+      "description": "Relax your body and mind with a calming yoga session designed for flexibility and balance.",
+      "img": "image3",
+      "instructor": "Olivia Smith",
+      "duration": 50,
+      "level": "Beginner",
+      "category": "Yoga"
+    },
+    {
+      "id": 4,
+      "title": "Pilates Flow",
+      "description": "Strengthen your core, improve posture and develop better body control with Pilates.",
+      "img": "image4",
+      "instructor": "Sophia Miller",
+      "duration": 45,
+      "level": "Advanced",
+      "category": "Pilates"
+    },
+   {
+  "id": 5,
+  "title": "Aerial Pilates",
+  "description": "Improve your balance, flexibility and core strength with an exciting aerial Pilates workout.",
+  "img": "image5",
+  "instructor": "Sophia Miller",
+  "duration": 45,
+  "level": "Advanced",
+  "category": "Pilates"
+},
+{
+  "id": 6,
+  "title": "Online Training",
+  "description": "Enjoy flexible workouts from anywhere with our convenient online training sessions.",
+  "img": "image6",
+  "instructor": "Sophia Miller",
+  "duration": 40,
+  "level": "Beginner",
+  "category": "Cardio"
+}
+  
+  ]
 }

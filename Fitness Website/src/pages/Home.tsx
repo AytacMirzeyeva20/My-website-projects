@@ -2,7 +2,7 @@ import gymImg from "../asset/bg.jpg";
 
 function Home() {
   return (
-    <section
+    <section id="home"
       className="relative min-h-[calc(100vh-80px)] bg-cover bg-center overflow-hidden"
       style={{
         backgroundImage: `url(${gymImg})`,

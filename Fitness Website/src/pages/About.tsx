@@ -21,7 +21,7 @@ function About() {
   ];
 
   return (
-    <section className="bg-white px-6 py-20">
+    <section className="bg-white px-6 py-20" id="about">
       <div className="mx-auto max-w-7xl">
         <div className="mb-12">
           <h2 className="text-4xl font-black uppercase tracking-wide text-pink-900 md:text-5xl">
