@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-line/60;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-void text-ink font-body antialiased;
+    background-color: #04060c;
+  }
+
+  ::selection {
+    background: rgba(77, 163, 255, 0.35);
+    color: #ffffff;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #04060c;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1c2a4a;
+    border-radius: 999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2563a8;
+  }
+
+  :focus-visible {
+    outline: 2px solid #4da3ff;
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply font-mono text-[0.7rem] tracking-[0.25em] uppercase text-neon-soft/80;
+  }
+
+  .section-shell {
+    @apply relative mx-auto w-full max-w-6xl px-6 sm:px-8 lg:px-10;
+  }
+
+  .glass-panel {
+    @apply relative rounded-2xl border border-line/70 bg-white/[0.02] backdrop-blur-xl;
+  }
+
+  .btn-primary {
+    @apply relative inline-flex items-center justify-center gap-2 rounded-full bg-neon px-7 py-3 font-display text-sm font-semibold text-void shadow-neon transition-all duration-300 hover:shadow-neon-lg hover:-translate-y-0.5 active:translate-y-0;
+  }
+
+  .btn-ghost {
+    @apply relative inline-flex items-center justify-center gap-2 rounded-full border border-line px-7 py-3 font-display text-sm font-semibold text-ink transition-all duration-300 hover:border-neon/70 hover:text-neon-bright hover:shadow-neon hover:-translate-y-0.5 active:translate-y-0;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-white via-neon-soft to-neon bg-clip-text text-transparent;
+  }
+}
+
+@layer utilities {
+  .bg-grid {
+    background-image: linear-gradient(rgba(77, 163, 255, 0.07) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(77, 163, 255, 0.07) 1px, transparent 1px);
+    background-size: 44px 44px;
+  }
+
+  .mask-fade-bottom {
+    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
