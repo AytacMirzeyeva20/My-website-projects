@@ -1,0 +1,286 @@
+{
+    "products":[
+  {
+    "title": "Black Coffee",
+    "description": "Black coffee is as simple as it gets with ground coffee beans steeped in hot water, served warm. And if you want to sound fancy, you can call black coffee by its proper name: cafe noir.",
+    "ingredients": [
+      "Coffee"
+    ],
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUE_Zudr4-Ac1wMqUjbeWhLdbQ-jB5jE0NhhUwKc-9Gb1EOukTc2P0hn8&s=10",
+    "price": "$2.50",
+    "id": 1
+  },
+  {
+    "title": "Latte",
+    "description": "As the most popular coffee drink out there, the latte is made with a shot of espresso and steamed milk, with just a touch of foam. It can be ordered plain or flavored with everything from vanilla to pumpkin spice.",
+    "ingredients": [
+      "Espresso",
+      "Steamed milk"
+    ],
+    "image": "https://images.unsplash.com/photo-1561882468-9110e03e0f78?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGxhdHRlfGVufDB8fDB8fHww",
+    "price": "$4.00",
+    "id": 2
+  },
+  {
+    "title": "Caramel Latte",
+    "description": "If you like flavored lattes, a caramel latte is a great choice, combining espresso, steamed milk, and caramel for a naturally sweet and creamy drink.",
+    "ingredients": [
+      "Espresso",
+      "Steamed milk",
+      "Caramel syrup"
+    ],
+    "image": "https://images.unsplash.com/photo-1599398054066-846f28917f38?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "price": "$4.50",
+    "id": 3
+  },
+  {
+    "title": "Cappuccino",
+    "description": "A cappuccino is an espresso drink with steamed milk and a thick layer of foam, often topped with cocoa powder or cinnamon. Some variations use cream instead of milk or add flavored syrups.",
+    "ingredients": [
+      "Espresso",
+      "Steamed milk",
+      "Foam"
+    ],
+    "image": "https://images.unsplash.com/photo-1557006021-b85faa2bc5e2?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "price": "$4.00",
+    "id": 4
+  },
+  {
+    "title": "Americano",
+    "description": "With a flavor similar to black coffee, an americano is made by diluting a shot of espresso with hot water.",
+    "ingredients": [
+      "Espresso",
+      "Hot water"
+    ],
+    "image": "https://img.magnific.com/free-photo/cup-coffee-table-grey-background_1220-7312.jpg?semt=ais_hybrid&w=740&q=80",
+    "price": "$3.00",
+    "id": 5
+  },
+  {
+    "title": "Espresso",
+    "description": "A shot of espresso can be served on its own or used as the base for most coffee drinks, like lattes and macchiatos.",
+    "ingredients": [
+      "Espresso"
+    ],
+    "image": "https://images.unsplash.com/photo-1579992357154-faf4bde95b3d?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "price": "$2.75",
+    "id": 6
+  },
+  {
+    "title": "Macchiato",
+    "description": "An espresso macchiato is a shot of espresso marked with a small dollop of foam. It is stronger and smaller than a cappuccino or latte.",
+    "ingredients": [
+      "Espresso",
+      "Foam"
+    ],
+    "image": "https://easyweeknightrecipes.com/wp-content/uploads/2023/07/starbucks-coffee-3.jpg",
+    "price": "$3.75",
+    "id": 7
+  },
+  {
+    "title": "Mocha",
+    "description": "For all the chocolate lovers out there, a mocha is an easy favorite. It is a chocolate espresso drink made with steamed milk and foam.",
+    "ingredients": [
+      "Espresso",
+      "Steamed milk",
+      "Chocolate"
+    ],
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSejeVr7QtDbaEn25wS4ZhycpCA-XvoEG1sY7Lg8_5ft6Sr9by_9b2_TQhb&s=10",
+    "price": "$4.75",
+    "id": 8
+  },
+  {
+    "title": "Hot Chocolate",
+    "description": "A classic warm drink made with chocolate and steamed milk. Rich, cozy, and especially good on cold days.",
+    "ingredients": [
+      "Chocolate",
+      "Milk"
+    ],
+    "image": "https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fGhvdCUyMGNob2NvbGF0ZXxlbnwwfHwwfHx8MA%3D%3D",
+    "price": "$3.50",
+    "id": 9
+  },
+  {
+    "title": "Coffee Cake",
+    "description": "A spiced tea latte made with black tea, steamed milk, and warming spices such as ginger, cardamom, and cinnamon.",
+    "ingredients": [
+      "Coffee",
+      "Milk",
+      "Ginger",
+      "Cardamom",
+      "Cinnamon"
+    ],
+    "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/coffee-cake-4d37cac.jpg",
+    "price": "$5.25",
+    "id": 10
+  },
+  {
+    "title": "Iced Latte",
+    "description": "A matcha latte is a green tea drink made with finely ground matcha and milk, offering mild sweetness, a distinctive flavor, and a gentle caffeine boost.",
+    "ingredients": [
+      "Iced",
+      "Milk",
+      "Sugar*"
+    ],
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg0tV0bWY1Rfdt8TSjYgVkikFsul-swThFv6_FmlSDxg&s=10",
+    "price": "$4.25",
+    "id": 11
+  },
+  {
+    "title": "Seasonal Brew",
+    "description": "A seasonal coffee with flavor notes that can include caramel, fruit, and chocolate.",
+    "ingredients": [
+      "Coffee"
+    ],
+    "image": "https://images.unsplash.com/photo-1611162458324-aae1eb4129a4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTg1fHxibGFjayUyMGNvZmZlZXxlbnwwfHwwfHx8MA%3D%3D",
+    "price": "$3.75",
+    "id": 12
+  },
+  {
+    "title": "Black Tea",
+    "description": "Black tea is made from the leaves of the Camellia sinensis plant. It can be enjoyed plain or flavored with fruit, spices, or other additions.",
+    "ingredients": [
+      "Tea"
+    ],
+    "image": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHRlYXxlbnwwfHwwfHx8MA%3D%3D",
+    "price": "$2.75",
+    "id": 13
+  },
+  {
+    "title": "Iced Latte",
+    "description": "An iced latte is espresso poured over ice and cold milk. Sweet syrup is optional, and it is also known as an iced cafe latte.",
+    "ingredients": [
+      "Espresso",
+      "Milk",
+      "Ice",
+      "Syrup"
+    ],
+    "image": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aWNlZCUyMGxhdHRlfGVufDB8fDB8fHww",
+    "price": "$4.50",
+    "id": 14
+  },
+  {
+    "title": "Iced Mocha Latte",
+    "description": "An iced mocha latte combines a latte with mocha flavors, bringing together chocolate and coffee in a rich and refreshing drink.",
+    "ingredients": [
+      "Espresso",
+      "Ice",
+      "Milk",
+      "Chocolate"
+    ],
+    "image": "https://images.unsplash.com/photo-1642647391072-6a2416f048e5?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fGljZWQlMjBtb2NoYSUyMGxhdHRlfGVufDB8fDB8fHww",
+    "price": "$5.00",
+    "id": 15
+  },
+  {
+    "title": "Blended Caramel Coffee",
+    "description": "A blended iced coffee with caramel syrup, milk, and ice, topped with whipped cream and caramel sauce.",
+    "ingredients": [
+      "Coffee",
+      "Ice",
+      "Milk",
+      "Caramel syrup",
+      "Whipped cream*",
+      "Caramel sauce"
+    ],
+    "image": "https://images.unsplash.com/photo-1662047102608-a6f2e492411f?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZnJhcGlubyUyMGNhcmFtZWx8ZW58MHx8MHx8fDA%3D",
+    "price": "$5.75",
+    "id": 16
+  },
+  {
+    "title": "Blended Mocha Coffee",
+    "description": "A blended iced mocha with coffee, milk, cocoa, and ice, finished with whipped cream for a chocolate shake-like treat.",
+    "ingredients": [
+      "Coffee",
+      "Ice",
+      "Milk",
+      "Cocoa",
+      "Whipped cream*"
+    ],
+    "image": "https://images.unsplash.com/photo-1530373239216-42518e6b4063?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZnJhcGlubyUyMG1vY2hhfGVufDB8fDB8fHww",
+    "price": "$5.75",
+    "id": 17
+  },
+  {
+    "title": "Orange Juice",
+    "description": "Freshly squeezed orange juice served cold over ice.",
+    "ingredients": [
+      "Fresh oranges",
+      "Ice"
+    ],
+    "image": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzF8fG9yYW5nZSUyMGp1aWNlfGVufDB8fDB8fHww",
+    "price": "$3.25",
+    "id": 18
+  },
+  {
+    "title": "Frozen Lemonade",
+    "description": "Frozen lemonade is a refreshing summer drink that combines freshly squeezed lemon juice, ice, and sweetener into a cool, tangy treat.",
+    "ingredients": [
+      "Lemon juice",
+      "Ice",
+      "Sugar*"
+    ],
+    "image": "https://images.unsplash.com/photo-1523371054106-bbf80586c38c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGxlbW9uYWRlJTIwd2l0aCUyMGljZXxlbnwwfHwwfHx8MA%3D%3D",
+    "price": "$3.75",
+    "id": 19
+  },
+  {
+    "title": "Lemonade",
+    "description": "A sweet-tart sparkling lemonade made with lemon juice, carbonated water, and honey.",
+    "ingredients": [
+      "Lemon juice",
+      "Sparkling water",
+      "Honey"
+    ],
+    "image": "https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bGVtb25hZGV8ZW58MHx8MHx8fDA%3D",
+    "price": "$3.25",
+    "id": 20
+  },
+  {
+    "title": "Black CoffeeTest",
+    "description": "Black coffee is as simple as it gets with ground coffee beans steeped in hot water, served warm. And if you want to sound fancy, you can call black coffee by its proper name: cafe noir.",
+    "ingredients": [
+      "Coffee"
+    ],
+    "image": "https://images.unsplash.com/photo-1494314671902-399b18174975?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "price": "$2.50",
+    "id": 55
+  },
+  {
+    "title": "Chocolate Dessert",
+    "description": "testasdfsaf",
+    "ingredients": [
+      "chocolate",
+      "powder bakery",
+      "milk"
+    ],
+     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4bGFcadEXSKsgSxS7sNMPTJ5zs-tHpS6WOR2UPy6GL8HRyKoW59jPK61_&s=10",
+    "price": "$4.50",
+    "id": 56
+  },
+  {
+    "title": "Caramel Dessert",
+    "description": "testresdfasdf",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7P0RUUeXblf2AqvefzRvCXamSEN6siNGFJRndW9e_3g&s=10",
+    "ingredients": [
+      "caramel",
+      "powder bakery",
+      "milk"
+    ],
+    "price": "$4.50",
+    "id": 57
+  },
+   {
+    "title": "Pancake",
+    "description": "testresdfasdf",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFo327TuiyGtL5nBNVMS1rRw7HD-qweiXuKEKtlX3Dqg&s",
+    "ingredients": [
+     "flour",
+      "powder bakery",
+      "milk"
+    ],
+    "price": "$5.00",
+    "id": 58
+  }
+]
+}
