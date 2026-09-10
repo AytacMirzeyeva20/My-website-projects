@@ -42,14 +42,14 @@ function Navbar(){
                 <span className="absolute left-0 -bottom-2 h-px w-full bg-amber-400 scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100" />
               </li>
 </Link>
- <Link to="/" className="text-white text-sm uppercase tracking-widest font-medium transition-colors duration-300 group-hover:text-amber-300">
+ <Link to="/gallery" className="text-white text-sm uppercase tracking-widest font-medium transition-colors duration-300 group-hover:text-amber-300">
  <li className="relative group">
                Gallery
            
                 <span className="absolute left-0 -bottom-2 h-px w-full bg-amber-400 scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100" />
               </li>
 </Link>
- <Link to="/" className="text-white text-sm uppercase tracking-widest font-medium transition-colors duration-300 group-hover:text-amber-300">
+ <Link to="/contact" className="text-white text-sm uppercase tracking-widest font-medium transition-colors duration-300 group-hover:text-amber-300">
  <li className="relative group">
                Contact
                 <span className="absolute left-0 -bottom-2 h-px w-full bg-amber-400 scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100" />
@@ -57,9 +57,9 @@ function Navbar(){
 </Link>
 
           </ul>
-          <a href="#" className="hidden md:inline-block border border-amber-400 text-amber-300 text-sm uppercase tracking-widest px-5 py-2 rounded-full transition-all duration-300 hover:bg-amber-400 hover:text-amber-950">
+         <Link to="/menu" className="hidden md:inline-block border border-amber-400 text-amber-300 text-sm uppercase tracking-widest px-5 py-2 rounded-full transition-all duration-300 hover:bg-amber-400 hover:text-amber-950">
             Order Now
-          </a>
+          </Link>
 
           <button
             className="md:hidden text-amber-50 focus:outline-none focus:ring-2 focus:ring-amber-400 rounded p-1"

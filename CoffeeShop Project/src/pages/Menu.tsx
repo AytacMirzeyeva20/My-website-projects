@@ -1,17 +1,21 @@
 import { useEffect, useState } from "react";
-
+import { useCart } from "../context/useCart";
 type Product = {
   id: number;
   title: string;
   description: string;
   ingredients: string[];
   image: string;
-  price:string;
+  price:number;
 };
 
 function Menu() {
   const [products, setProducts] = useState<Product[]>([]);
-
+const {dispatch}=useCart();
+const[search,setSearch]=useState("");
+const filteredProducts = products.filter((product) =>
+  product.title.toLowerCase().includes(search.toLowerCase())
+);
   useEffect(() => {
     fetch("http://localhost:3000/products")
       .then((res) => res.json())
@@ -37,10 +41,18 @@ function Menu() {
             delicious desserts and unforgettable flavors.
           </p>
         </div>
+<div className="mx-auto mb-14 flex max-w-2xl items-center overflow-hidden rounded-2xl border border-[#dbc9b8] bg-white p-1.5 shadow-[0_10px_30px_rgba(74,44,32,0.10)] transition-all duration-300 focus-within:border-[#b8860b] focus-within:shadow-[0_10px_35px_rgba(184,134,11,0.18)]">
+  <input type="search" onChange={(product)=>setSearch(product.target.value)} placeholder="Search your favorite coffee..."  className="flex-1 bg-transparent px-5 py-3.5 text-sm text-[#4a2c20] outline-none placeholder:text-[#a58c7d]"/>
+  <button className="rounded-xl bg-[#5a3425] px-7 py-3.5 text-sm font-semibold text-white shadow-md transition-all duration-300 hover:bg-[#b8860b] hover:shadow-[0_8px_20px_rgba(184,134,11,0.30)] active:scale-95">
+    Search
+  </button>
+
+</div>
+
 
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
 
-          {products.map((product) => (
+          {filteredProducts.map((product) => (
             <div
               key={product.id}
               className="group overflow-hidden rounded-3xl border border-[#dbc9b8] bg-white shadow-[0_15px_40px_rgba(74,44,32,0.10)] transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_25px_55px_rgba(74,44,32,0.18)]">
@@ -79,14 +91,17 @@ function Menu() {
                   </p>
                   <div className="flex gap-3">
                     <span className="mt-3 font-bold" >Price:</span>
-                  <p className="mt-3 font-bold text-amber-500">{product.price}</p>
+                  <p className="mt-3 font-bold text-amber-500">{product.price}$</p>
                 </div>
                 </div>
                 <div className="my-6 h-px bg-[#eadfd3]" />
 
-                <button
-                  className="w-full rounded-xl bg-[#5a3425] px-6 py-3.5 font-semibold text-white shadow-md transition-all duration-300 hover:bg-[#b8860b] hover:shadow-lg active:scale-95"
-                  onClick={() => console.log("Added:", product.title)} >
+                <button onClick={()=> { console.log("Məhsul əlavə olunur:", product)
+                 dispatch({
+    type: "ADD",
+    payload: product,
+  }) }}
+                  className="w-full rounded-xl bg-[#5a3425] px-6 py-3.5 font-semibold text-white shadow-md transition-all duration-300 hover:bg-[#b8860b] hover:shadow-lg active:scale-95">
                   <span className="flex items-center justify-center gap-2">
                     Add to Cart
                   </span>

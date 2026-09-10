@@ -7,7 +7,7 @@
       "Coffee"
     ],
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUE_Zudr4-Ac1wMqUjbeWhLdbQ-jB5jE0NhhUwKc-9Gb1EOukTc2P0hn8&s=10",
-    "price": "$2.50",
+    "price": 2.50,
     "id": 1
   },
   {
@@ -18,7 +18,7 @@
       "Steamed milk"
     ],
     "image": "https://images.unsplash.com/photo-1561882468-9110e03e0f78?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGxhdHRlfGVufDB8fDB8fHww",
-    "price": "$4.00",
+    "price": 4.00,
     "id": 2
   },
   {
@@ -30,7 +30,7 @@
       "Caramel syrup"
     ],
     "image": "https://images.unsplash.com/photo-1599398054066-846f28917f38?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "price": "$4.50",
+    "price": 4.50,
     "id": 3
   },
   {
@@ -42,7 +42,7 @@
       "Foam"
     ],
     "image": "https://images.unsplash.com/photo-1557006021-b85faa2bc5e2?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "price": "$4.00",
+    "price": 4.00,
     "id": 4
   },
   {
@@ -53,7 +53,7 @@
       "Hot water"
     ],
     "image": "https://img.magnific.com/free-photo/cup-coffee-table-grey-background_1220-7312.jpg?semt=ais_hybrid&w=740&q=80",
-    "price": "$3.00",
+    "price": 3.00,
     "id": 5
   },
   {
@@ -63,7 +63,7 @@
       "Espresso"
     ],
     "image": "https://images.unsplash.com/photo-1579992357154-faf4bde95b3d?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "price": "$2.75",
+    "price": 2.75,
     "id": 6
   },
   {
@@ -74,7 +74,7 @@
       "Foam"
     ],
     "image": "https://easyweeknightrecipes.com/wp-content/uploads/2023/07/starbucks-coffee-3.jpg",
-    "price": "$3.75",
+    "price": 3.75,
     "id": 7
   },
   {
@@ -86,7 +86,7 @@
       "Chocolate"
     ],
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSejeVr7QtDbaEn25wS4ZhycpCA-XvoEG1sY7Lg8_5ft6Sr9by_9b2_TQhb&s=10",
-    "price": "$4.75",
+    "price": 4.75,
     "id": 8
   },
   {
@@ -97,7 +97,7 @@
       "Milk"
     ],
     "image": "https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fGhvdCUyMGNob2NvbGF0ZXxlbnwwfHwwfHx8MA%3D%3D",
-    "price": "$3.50",
+    "price": 3.50,
     "id": 9
   },
   {
@@ -111,7 +111,7 @@
       "Cinnamon"
     ],
     "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/coffee-cake-4d37cac.jpg",
-    "price": "$5.25",
+    "price": 5.25,
     "id": 10
   },
   {
@@ -123,7 +123,7 @@
       "Sugar*"
     ],
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg0tV0bWY1Rfdt8TSjYgVkikFsul-swThFv6_FmlSDxg&s=10",
-    "price": "$4.25",
+    "price": 4.25,
     "id": 11
   },
   {
@@ -133,7 +133,7 @@
       "Coffee"
     ],
     "image": "https://images.unsplash.com/photo-1611162458324-aae1eb4129a4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTg1fHxibGFjayUyMGNvZmZlZXxlbnwwfHwwfHx8MA%3D%3D",
-    "price": "$3.75",
+    "price": 3.75,
     "id": 12
   },
   {
@@ -143,7 +143,7 @@
       "Tea"
     ],
     "image": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHRlYXxlbnwwfHwwfHx8MA%3D%3D",
-    "price": "$2.75",
+    "price": 2.75,
     "id": 13
   },
   {
@@ -156,7 +156,7 @@
       "Syrup"
     ],
     "image": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aWNlZCUyMGxhdHRlfGVufDB8fDB8fHww",
-    "price": "$4.50",
+    "price": 4.50,
     "id": 14
   },
   {
@@ -169,7 +169,7 @@
       "Chocolate"
     ],
     "image": "https://images.unsplash.com/photo-1642647391072-6a2416f048e5?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fGljZWQlMjBtb2NoYSUyMGxhdHRlfGVufDB8fDB8fHww",
-    "price": "$5.00",
+    "price": 5.00,
     "id": 15
   },
   {
@@ -184,7 +184,7 @@
       "Caramel sauce"
     ],
     "image": "https://images.unsplash.com/photo-1662047102608-a6f2e492411f?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZnJhcGlubyUyMGNhcmFtZWx8ZW58MHx8MHx8fDA%3D",
-    "price": "$5.75",
+    "price": 5.75,
     "id": 16
   },
   {
@@ -198,7 +198,7 @@
       "Whipped cream*"
     ],
     "image": "https://images.unsplash.com/photo-1530373239216-42518e6b4063?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZnJhcGlubyUyMG1vY2hhfGVufDB8fDB8fHww",
-    "price": "$5.75",
+    "price": 5.75,
     "id": 17
   },
   {
@@ -209,7 +209,7 @@
       "Ice"
     ],
     "image": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzF8fG9yYW5nZSUyMGp1aWNlfGVufDB8fDB8fHww",
-    "price": "$3.25",
+    "price": 3.25,
     "id": 18
   },
   {
@@ -221,7 +221,7 @@
       "Sugar*"
     ],
     "image": "https://images.unsplash.com/photo-1523371054106-bbf80586c38c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGxlbW9uYWRlJTIwd2l0aCUyMGljZXxlbnwwfHwwfHx8MA%3D%3D",
-    "price": "$3.75",
+    "price": 3.75,
     "id": 19
   },
   {
@@ -233,7 +233,7 @@
       "Honey"
     ],
     "image": "https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bGVtb25hZGV8ZW58MHx8MHx8fDA%3D",
-    "price": "$3.25",
+    "price": 3.25,
     "id": 20
   },
   {
@@ -243,7 +243,7 @@
       "Coffee"
     ],
     "image": "https://images.unsplash.com/photo-1494314671902-399b18174975?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "price": "$2.50",
+    "price": 2.50,
     "id": 55
   },
   {
@@ -255,7 +255,7 @@
       "milk"
     ],
      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4bGFcadEXSKsgSxS7sNMPTJ5zs-tHpS6WOR2UPy6GL8HRyKoW59jPK61_&s=10",
-    "price": "$4.50",
+    "price": 4.50,
     "id": 56
   },
   {
@@ -267,7 +267,7 @@
       "powder bakery",
       "milk"
     ],
-    "price": "$4.50",
+    "price": 4.50,
     "id": 57
   },
    {
@@ -279,8 +279,34 @@
       "powder bakery",
       "milk"
     ],
-    "price": "$5.00",
+    "price": 5.00,
     "id": 58
+  }
+],
+"gallery":[
+  {
+    "id":1,
+    "src": "https://coffeebusiness.com/wp-content/uploads/2019/08/14tenents-pt2.jpg",
+    "title": "Sabah dəmləməsi",
+    "note": "Gündən əvvəl ilk fincan"
+  },
+  {
+    "id":2,
+"src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOLL8vVBu0ydU1hqCZSz97s6xXrNKZN_L9Gbf_1w8rnA&s=10",
+    "title": "Barista masası",
+    "note": "Hər detal əl işidir"
+  },
+  {
+    "id":3,
+    "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTkeCi_wxYS4rykpuk74tgs6vFsZz-DpMO2e_2ApzPqQ&s=10",
+    "title": "Dənələrin seçimi",
+    "note": "Tək mənşəli qovrulma"
+  },
+  {
+    "id":4,
+    "src": "https://static.gooecloud.com/upload/img/GY569396824781/1_4.jpg?x-oss-process=image/watermark,t_100,g_center,x_100,y_100,image_dXBsb2FkL2ltZy9HWTU2OTM5NjgyNDc4MS93YXRlcm1hcmsucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTAw/format,webp/quality,Q_100",
+    "title": "Otağın ovqatı",
+    "note": "İstilik hər küncdə"
   }
 ]
 }

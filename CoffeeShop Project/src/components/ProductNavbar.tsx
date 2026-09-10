@@ -1,7 +1,10 @@
 import { FaShoppingBasket } from "react-icons/fa";
 import { IoPersonCircle } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import { useCart } from "../context/useCart";
+import { FaHeart } from "react-icons/fa";
 function ProductNavbar(){
+  const {cart}=useCart();
     return(
         <>
          <nav className="w-full bg-amber-950 border-b border-amber-800/40 sticky top-0 z-50 shadow-lg shadow-black/30">
@@ -42,14 +45,14 @@ function ProductNavbar(){
                 <span className="absolute left-0 -bottom-2 h-px w-full bg-amber-400 scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100" />
               </li>
 </Link>
- <Link to="/" className="text-white text-sm uppercase tracking-widest font-medium transition-colors duration-300 group-hover:text-amber-300">
+ <Link to="/gallery" className="text-white text-sm uppercase tracking-widest font-medium transition-colors duration-300 group-hover:text-amber-300">
  <li className="relative group">
                Gallery
            
                 <span className="absolute left-0 -bottom-2 h-px w-full bg-amber-400 scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100" />
               </li>
 </Link>
- <Link to="/" className="text-white text-sm uppercase tracking-widest font-medium transition-colors duration-300 group-hover:text-amber-300">
+ <Link to="/contact" className="text-white text-sm uppercase tracking-widest font-medium transition-colors duration-300 group-hover:text-amber-300">
  <li className="relative group">
                Contact
                 <span className="absolute left-0 -bottom-2 h-px w-full bg-amber-400 scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100" />
@@ -57,9 +60,15 @@ function ProductNavbar(){
 </Link>
 
           </ul>
-<div className="flex gap-7 text-white text-2xl">
-    <FaShoppingBasket />
-    <IoPersonCircle />
+<div className="flex gap-7 text-white">
+  <Link to="/cart">
+  <div className="flex gap-3">
+      <FaShoppingBasket size={30} />
+    <p className="text-2xl">{cart.length}</p>
+  </div>
+    </Link>
+    <FaHeart size={26} />
+    <IoPersonCircle  size={30}/>
 </div>
          </div>
          </div>
