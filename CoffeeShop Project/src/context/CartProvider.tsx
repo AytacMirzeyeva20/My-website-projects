@@ -18,10 +18,12 @@ export type Product = {
 
 type CartState = {
   cart: Product[];
+  heart:Product[];
 };
 
 const initCartState: CartState = {
   cart: JSON.parse(localStorage.getItem("cart") || "[]"),
+    heart: JSON.parse(localStorage.getItem("heart") || "[]"),
 };
 
 const REDUCER_ACTION_TYPE = {
@@ -29,6 +31,8 @@ const REDUCER_ACTION_TYPE = {
   REMOVE: "REMOVE",
   QUANTITY: "QUANTITY",
   SUBMIT: "SUBMIT",
+  ADD_HEART:"ADD_HEART",
+  REMOVE_HEART:"REMOVE_HEART",
 } as const;
 
 type CartAction = {
@@ -39,6 +43,7 @@ type CartAction = {
 
 type CartContextType = {
   cart: Product[];
+  heart:Product[];
   dispatch: Dispatch<CartAction>;
 };
 
@@ -96,6 +101,27 @@ const cartReducer = (
         ),
       };
 
+    case REDUCER_ACTION_TYPE.ADD_HEART:
+  if (!action.payload) {
+    return state;
+  }
+
+  return {
+    ...state,
+    heart: [
+      ...state.heart,
+      action.payload,
+    ],
+  };
+  case REDUCER_ACTION_TYPE.REMOVE_HEART:
+     if (!action.payload) {
+    return state;
+     }
+     return{
+      ...state,heart:state.heart.filter(
+        (product)=>product.id!==action.payload?.id
+      ),
+     }
     case REDUCER_ACTION_TYPE.SUBMIT:
       return {
         ...state,
@@ -119,10 +145,11 @@ function CartProvider({ children }: CartProviderProps) {
 useEffect(() => {
   localStorage.setItem("cart", JSON.stringify(state.cart));
 }, [state.cart]);
+localStorage.setItem("heart", JSON.stringify(state.heart));
   return (
     <CartContext.Provider
       value={{
-        cart: state.cart,
+        cart: state.cart,heart:state.heart,
         dispatch,
       }}
     >

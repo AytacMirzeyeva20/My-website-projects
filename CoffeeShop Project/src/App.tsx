@@ -9,6 +9,9 @@ import CartProvider from "./context/CartProvider"
 import Cart from "./components/Cart"
 import Gallery from "./pages/Gallery"
 import Contact from "./pages/Contact"
+import Order from "./components/Order"
+import Heart from "./components/Heart"
+import Register from "./pages/Register"
 function App(){
   return(
     <BrowserRouter>
@@ -51,6 +54,11 @@ function App(){
     </>
     }
     />
+    <Route path="/order" element={
+      <Order/>
+    }/>
+    <Route path="/heart" element={<Heart/>}/>
+    <Route path="/register" element={<Register/>}/>
    </Routes>
    </CartProvider>
 </BrowserRouter>

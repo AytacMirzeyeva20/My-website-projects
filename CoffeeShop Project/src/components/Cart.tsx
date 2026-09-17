@@ -1,10 +1,10 @@
 import { FaMinus, FaPlus, FaTrash, FaArrowLeft } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useCart } from "../context/useCart";
 
 function Cart() {
   const { cart, dispatch } = useCart();
-
+const navigate=useNavigate();
   const totalPrice = cart.reduce(
     (total, product) =>
       total + Number(product.price) * (product.quantity || 1),
@@ -214,14 +214,7 @@ function Cart() {
                     </span>
                   </div>
 
-                  <button
-                    onClick={() =>
-                      dispatch({
-                        type: "SUBMIT",
-                      })
-                    }
-                    className="mt-8 w-full rounded-xl bg-[#d4a72c] px-6 py-4 font-bold uppercase tracking-widest text-white shadow-lg transition-all duration-300 hover:bg-[#e0b83e] hover:-translate-y-1 active:scale-95"
-                  >
+                  <button onClick={()=>navigate("/order")} className="mt-8 w-full rounded-xl bg-[#d4a72c] px-6 py-4 font-bold uppercase tracking-widest text-white shadow-lg transition-all duration-300 hover:bg-[#e0b83e] hover:-translate-y-1 active:scale-95">
                     Place Order
                   </button>
 

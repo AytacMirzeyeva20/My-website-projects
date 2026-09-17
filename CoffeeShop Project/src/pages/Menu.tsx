@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { useCart } from "../context/useCart";
+import { FaHeart } from "react-icons/fa6";
+
 type Product = {
   id: number;
   title: string;
@@ -21,7 +23,6 @@ const filteredProducts = products.filter((product) =>
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
-
   return (
     <section className="min-h-screen bg-[#f7f1e8] px-6 py-24">
       <div className="mx-auto max-w-7xl">
@@ -58,6 +59,7 @@ const filteredProducts = products.filter((product) =>
               className="group overflow-hidden rounded-3xl border border-[#dbc9b8] bg-white shadow-[0_15px_40px_rgba(74,44,32,0.10)] transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_25px_55px_rgba(74,44,32,0.18)]">
 
               <div className="relative h-64 overflow-hidden">
+              
                 <img
                   src={product.image}
                   alt={product.title}
@@ -65,7 +67,9 @@ const filteredProducts = products.filter((product) =>
                 />
 
                 <div className="absolute inset-0 bg-linear-to-t from-[#3b2118]/70 via-transparent to-transparent opacity-70" />
-
+<button onClick={()=>dispatch({type:"ADD_HEART",payload:product})} className="absolute left-4 top-4 flex h-11 w-11 items-center justify-center rounded-full bg-white/90 text-[#8b6f61] shadow-lg backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:bg-[#b8860b] hover:text-white active:scale-95">
+  <FaHeart className="text-lg" />
+</button>
                 <div className="absolute right-4 top-4 rounded-full bg-[#d4a72c] px-4 py-2 text-xs font-bold uppercase tracking-wider text-white shadow-lg">
                   Premium
                 </div>
@@ -81,38 +85,19 @@ const filteredProducts = products.filter((product) =>
                   {product.description}
                 </p>
 
-                <div className="mt-5">
-                  <p className="mb-2 text-xs font-bold uppercase tracking-widest text-[#b8860b]">
-                    Ingredients
-                  </p>
-
-                  <p className="text-sm text-[#65483b]">
-                    {product.ingredients.join(" • ")}
-                  </p>
-                  <div className="flex gap-3">
-                    <span className="mt-3 font-bold" >Price:</span>
-                  <p className="mt-3 font-bold text-amber-500">{product.price}$</p>
-                </div>
-                </div>
-                <div className="my-6 h-px bg-[#eadfd3]" />
-
-                <button onClick={()=> { console.log("Məhsul əlavə olunur:", product)
-                 dispatch({
-    type: "ADD",
-    payload: product,
-  }) }}
-                  className="w-full rounded-xl bg-[#5a3425] px-6 py-3.5 font-semibold text-white shadow-md transition-all duration-300 hover:bg-[#b8860b] hover:shadow-lg active:scale-95">
-                  <span className="flex items-center justify-center gap-2">
-                    Add to Cart
-                  </span>
-                </button>
-
-              </div>
+              <div className="mt-5">
+  <button
+    onClick={() => dispatch({ type: "ADD", payload: product })}
+    className="w-full rounded-xl bg-[#5a3425] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#b8860b]"
+  >
+    Add to Cart
+  </button>
+</div>
+</div>
             </div>
           ))}
-
         </div>
-      </div>
+    </div>
     </section>
   );
 }
