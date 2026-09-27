@@ -12,6 +12,11 @@ import Contact from "./pages/Contact"
 import Order from "./components/Order"
 import Heart from "./components/Heart"
 import Register from "./pages/Register"
+import Login from "./pages/Login"
+import ProductDetails from "./components/ProductDetails"
+import AdminNavbar from "./admin/components/AdminNavbar"
+import Sidebar from "./admin/components/Sidebar"
+import Dashboard from "./admin/pages/Dashboard"
 function App(){
   return(
     <BrowserRouter>
@@ -59,6 +64,16 @@ function App(){
     }/>
     <Route path="/heart" element={<Heart/>}/>
     <Route path="/register" element={<Register/>}/>
+    <Route path="/login" element={<Login/>}/>
+    <Route path="/product/:id" element={<ProductDetails/>}/>
+    <Route path="/admin" element={
+      <>
+      <AdminNavbar/>
+      <Sidebar/>
+      <Dashboard/>
+      </>
+    } />
+
    </Routes>
    </CartProvider>
 </BrowserRouter>

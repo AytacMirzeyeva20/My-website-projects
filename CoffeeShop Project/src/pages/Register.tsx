@@ -1,4 +1,33 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
 function Register(){
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [rememberMe, setRememberMe] = useState(false);
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
+ 
+  const handleSubmit=async(e: React.FormEvent<HTMLFormElement>)=>{
+    e.preventDefault();
+      if (!firstName || !lastName || !email || !password) {
+    setError("Please fill in all fields");
+    setSuccess("")
+    return;
+  }
+    setError("");
+     const user={firstName,lastName,email,password}
+  await fetch("http://localhost:3000/user",{
+    method:"POST",
+    headers:{
+       "Content-Type": "application/json",
+  },
+  body: JSON.stringify(user),
+  });
+  setSuccess("Registration successful!");
+    console.log(user);
+}
     return(
         <>
 <section className="min-h-screen bg-[#f7f1e8] flex items-center justify-center px-6 py-16">
@@ -33,105 +62,51 @@ function Register(){
           Join our coffee community today.
         </p>
       </div>
-      <form action="" className="space-y-5">
+      <form onSubmit={handleSubmit} className="space-y-5">
         <div>
           <label htmlFor="firstName" className="block text-sm font-medium text-amber-950 mb-2">
             First Name
           </label>
 
-          <input  id="firstName" type="text" placeholder="Enter your name..." className="w-full  bg-[#faf7f2] border border-amber-900/15 rounded-xl px-4 py-3 text-amber-950 placeholder:text-gray-400 outline-none transition-all duration-300 focus:border-amber-600 focus:ring-2 focus:ring-amber-600/10" />
+          <input  id="firstName" type="text" value={firstName}
+  onChange={(e) => setFirstName(e.target.value)}  placeholder="Enter your name..." className="w-full  bg-[#faf7f2] border border-amber-900/15 rounded-xl px-4 py-3 text-amber-950 placeholder:text-gray-400 outline-none transition-all duration-300 focus:border-amber-600 focus:ring-2 focus:ring-amber-600/10" />
         </div>
         <div>
           <label htmlFor="lastName" className="block text-sm font-medium text-amber-950 mb-2">
             Last Name
           </label>
 
-          <input
-            id="lastName"
-            type="text"
-            placeholder="Enter your surname..."
-            className="
-              w-full
-              bg-[#faf7f2]
-              border
-              border-amber-900/15
-              rounded-xl
-              px-4
-              py-3
-              text-amber-950
-              placeholder:text-gray-400
-              outline-none
-              transition-all
-              duration-300
-              focus:border-amber-600
-              focus:ring-2
-              focus:ring-amber-600/10
-            "
-          />
+          <input id="lastName" type="text" placeholder="Enter your surname..." value={lastName}
+  onChange={(e) => setLastName(e.target.value)} className=" w-full  bg-[#faf7f2] border border-amber-900/15 rounded-xl px-4 py-3
+ text-amber-950 placeholder:text-gray-400 outline-none transition-all duration-300 focus:border-amber-600 focus:ring-2 focus:ring-amber-600/10"/>
         </div>
         <div>
           <label htmlFor="email" className="block text-sm font-medium text-amber-950 mb-2">
             Email
           </label>
 
-          <input
-            id="email"
-            type="email"
-            placeholder="Your email..."
-            className="
-              w-full
-              bg-[#faf7f2]
-              border
-              border-amber-900/15
-              rounded-xl
-              px-4
-              py-3
-              text-amber-950
-              placeholder:text-gray-400
-              outline-none
-              transition-all
-              duration-300
-              focus:border-amber-600
-              focus:ring-2
-              focus:ring-amber-600/10
-            "
-          />
+          <input id="email" type="email" placeholder="Your email..."
+    value={email}
+  onChange={(e) => setEmail(e.target.value)}      className=" w-full  bg-[#faf7f2] border border-amber-900/15 rounded-xl px-4 py-3
+ text-amber-950 placeholder:text-gray-400 outline-none transition-all duration-300 focus:border-amber-600 focus:ring-2 focus:ring-amber-600/10"  
+              />
         </div>
         <div>
           <label htmlFor="password" className="block text-sm font-medium text-amber-950 mb-2">
             Password
           </label>
 
-          <input
-            id="password"
-            type="password"
-            placeholder="Your password..."
-            className="
-              w-full
-              bg-[#faf7f2]
-              border
-              border-amber-900/15
-              rounded-xl
-              px-4
-              py-3
-              text-amber-950
-              placeholder:text-gray-400
-              outline-none
-              transition-all
-              duration-300
-              focus:border-amber-600
-              focus:ring-2
-              focus:ring-amber-600/10
-            "
+          <input id="password"  type="password" placeholder="Your password..." value={password}
+  onChange={(e) => setPassword(e.target.value)}
+           className=" w-full  bg-[#faf7f2] border border-amber-900/15 rounded-xl px-4 py-3
+ text-amber-950 placeholder:text-gray-400 outline-none transition-all duration-300 focus:border-amber-600 focus:ring-2 focus:ring-amber-600/10"
           />
         </div>
         <div className="flex items-center justify-between pt-1">
 
           <label className="flex items-center gap-2 cursor-pointer text-sm text-gray-600">
-            <input
-              type="checkbox"
-              className="w-4 h-4 accent-amber-700 cursor-pointer"
-            />
+            <input  type="checkbox" className="w-4 h-4 accent-amber-700 cursor-pointer"  checked={rememberMe}
+  onChange={(e) => setRememberMe(e.target.checked)} />
 
             <span>Remember me</span>
           </label>
@@ -168,34 +143,23 @@ function Register(){
           >
             Register
           </button>
-
-          <a
-            href="#"
-            className="
-              flex-1
-              text-center
-              border
-              border-amber-800
-              text-amber-800
-              py-3
-              rounded-xl
-              uppercase
-              tracking-widest
-              text-sm
-              font-medium
-              transition-all
-              duration-300
-              hover:bg-amber-800
-              hover:text-white
-            "
-          >
+  
+         <Link to ='/login' className=" flex-1 text-center border border-amber-800   text-amber-800 py-3
+  rounded-xl uppercase tracking-widest text-sm font-medium transition-all duration-300 hover:bg-amber-800  hover:text-white">
             Log In
-          </a>
+         </Link>
 
         </div>
-
+        {error &&(
+<p className="text-red-600 text-sm">{error}</p>
+ )}
+ {success && (
+  <p className="text-green-600 text-sm">{success}</p>
+ )}
       </form>
-
+<Link to="/" className="inline-flex items-center justify-center mt-6 px-6 py-2.5 rounded-xl   text-amber-800 text-sm font-medium tracking-wide transition-all duration-300" >
+← Back to Home
+</Link>
     </div>
 
   </div>
@@ -205,4 +169,5 @@ function Register(){
         </>
     )
 }
+
 export default Register

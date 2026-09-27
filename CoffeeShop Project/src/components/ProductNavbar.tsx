@@ -2,7 +2,8 @@ import { FaShoppingBasket } from "react-icons/fa";
 import { IoPersonCircle } from "react-icons/io5";
 import { Link, useNavigate } from "react-router-dom";
 import { useCart } from "../context/useCart";
-import { FaHeart } from "react-icons/fa";
+import { FaHeart } from "react-icons/fa"; 
+import { DiCoffeescript } from "react-icons/di";
 function ProductNavbar(){
   const {cart}=useCart();
   const{heart}=useCart()
@@ -13,17 +14,14 @@ function ProductNavbar(){
           <div className="max-w-6xl mx-auto px-6">
         <div className="flex items-center justify-between h-20">
        
-          <a
-            href="#"
-            className="font-serif text-2xl tracking-wide text-amber-50 flex items-center gap-2 group"
-          >
+          <Link to="/"  className="font-serif text-2xl tracking-wide text-amber-50 flex items-center gap-2 group">
             <span className="text-amber-400 text-3xl leading-none group-hover:rotate-12 transition-transform duration-300">
-              ☕
+                 <DiCoffeescript />
             </span>
             <span>
-              Coffee <span className="text-amber-400">Shop</span>
+              Elora <span className="text-amber-400">Coffee</span>
             </span>
-          </a>
+          </Link>
            <ul className="hidden md:flex items-center gap-10">
             <Link to="/" className="text-white text-sm uppercase tracking-widest font-medium transition-colors duration-300 group-hover:text-amber-300">
               <li className="relative group">

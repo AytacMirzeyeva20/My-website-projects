@@ -4,14 +4,15 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { BiLogoGmail } from "react-icons/bi";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdPlace } from "react-icons/md";
+import { DiCoffeescript } from "react-icons/di";
 function Footer(){
     return(
-<footer className="bg-[#38251e] pt-20 pb-12 px-6">
+<footer className="bg-[#38251e] pt-20 pb-12 px-6 dark:bg-black dark:text-white">
   <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-12">
     <div>
       <div className="flex items-center gap-3">
         <div className="w-11 h-11 rounded-full bg-white flex items-center justify-center text-amber-900 text-xl">
-          ☕
+            <DiCoffeescript size={25} />
         </div>
 
         <span className="text-white text-xl font-semibold">

@@ -1,23 +1,28 @@
 import { Link } from "react-router-dom";
 import { IoSunny } from "react-icons/io5";
 import { IoIosArrowDown } from "react-icons/io";
+import { DiCoffeescript } from "react-icons/di";
+import { FaMoon } from "react-icons/fa6";
+import { useState } from "react";
 function Navbar(){
+const[darkmode,setDarkmode]=useState(false);
+const toggleDarkMode = () => {
+  setDarkmode(!darkmode);
+  document.documentElement.classList.toggle("dark");
+};
     return(
-       <nav className="w-full bg-amber-950 border-b border-amber-800/40 sticky top-0 z-50 shadow-lg shadow-black/30">
+       <nav className="w-full bg-amber-950 border-b border-amber-800/40 sticky top-0 z-50 shadow-lg shadow-black/30 dark:bg-black dark:text-white">
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex items-center justify-between h-20">
        
-          <a
-            href="#"
-            className="font-serif text-2xl tracking-wide text-amber-50 flex items-center gap-2 group"
-          >
+          < Link to="/"  className="font-serif text-2xl tracking-wide text-amber-50 flex items-center gap-2 group">
             <span className="text-amber-400 text-3xl leading-none group-hover:rotate-12 transition-transform duration-300">
-              ☕
+              <DiCoffeescript />
             </span>
             <span>
-              Coffee <span className="text-amber-400">Shop</span>
+              Elora <span className="text-amber-400">Coffee</span>
             </span>
-          </a>
+          </Link>
 
           
           <ul className="hidden md:flex items-center gap-10">
@@ -65,10 +70,10 @@ function Navbar(){
     <IoIosArrowDown />
      </span>
   </div>
-  <button className="w-10 h-10 rounded-full flex items-center justify-center border border-amber-700/50 bg-amber-900/60 text-amber-300 transition-all
+  <button  onClick={toggleDarkMode} className="w-10 h-10 rounded-full flex items-center justify-center border border-amber-700/50 bg-amber-900/60 text-amber-300 transition-all
  duration-300  hover:bg-amber-400  hover:text-amber-950  hover:border-amber-400 hover:rotate-12 hover:shadow-lg hover:shadow-amber-400/20" aria-label="Toggle theme">
-    <IoSunny className="text-lg" />
-  </button>
+    {darkmode ? <FaMoon /> : <IoSunny />}
+   </button>
 </div>
          <Link to="/menu" className="hidden md:inline-block border border-amber-400 text-amber-300 text-sm uppercase tracking-widest px-5 py-2 rounded-full transition-all duration-300 hover:bg-amber-400 hover:text-amber-950">
             Order Now
