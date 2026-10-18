@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useCart } from "../context/useCart";
 import { FaHeart } from "react-icons/fa6";
-import { useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 
 type Product = {
   id: number;
@@ -28,7 +28,9 @@ const ProductCategory=category === "All" || product.category === category;
   useEffect(() => {
     fetch("http://localhost:3000/products")
       .then((res) => res.json())
-      .then((data) => setProducts(data));
+      .then((data) =>{ setProducts(data)
+      localStorage.setItem("products",JSON.stringify(data));
+  })
   }, []);
   const navigate=useNavigate();
 

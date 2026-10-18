@@ -8,10 +8,13 @@ function Sidebar() {
     const[menu,menuOpen]=useState(false);
   return (
     <>
-     <section
-  className={`fixed left-0 top-0 z-50 h-screen border-r border-[#eadfd4] bg-white shadow-[10px_0_35px_rgba(74,44,32,0.06)] transition-all duration-300 ${
-    menu ? "w-72" : "w-20"
-  }`}
+ <section
+  className={`fixed left-0 top-0 z-50 flex h-screen flex-col
+  border-r border-[#eadfd4]
+  ${menu ? "w-72" : "w-20"}
+  bg-[#fffaf4]
+  shadow-[0_8px_25px_rgba(74,44,32,0.08)]
+  transition-all duration-300`}
 >
         <div className="flex h-24 items-center justify-between border-b border-[#f0e7df] px-6">
 
@@ -33,7 +36,7 @@ function Sidebar() {
   )}
           </div>
 
-          <button onClick={()=>menuOpen(prev=>!prev)}
+          <button onClick={() => menuOpen(prev => !prev)}
             className="flex h-9 w-9 items-center justify-center rounded-xl border border-[#eadfd4] text-[#5a3425] transition-all duration-300 hover:border-[#b8860b] hover:bg-[#fff8ed] hover:text-[#b8860b]">
             <IoMenu className="text-xl" />
           </button>
@@ -57,7 +60,7 @@ function Sidebar() {
             </li>
 
             <li>
-              <button className="group flex w-full items-center gap-4 rounded-xl px-4 py-3.5 text-left text-sm font-medium text-[#6d574b] transition-all duration-300 hover:bg-[#fff8ed] hover:text-[#5a3425]">
+              <button  onClick={()=>navigate("/admin/analytics")} className="group flex w-full items-center gap-4 rounded-xl px-4 py-3.5 text-left text-sm font-medium text-[#6d574b] transition-all duration-300 hover:bg-[#fff8ed] hover:text-[#5a3425]">
                 <MdAnalytics className="text-xl text-[#b8860b] transition-transform group-hover:scale-110" />
              {menu && <span>Analytics</span>}
               </button>
@@ -71,7 +74,7 @@ function Sidebar() {
             </li>
 
             <li>
-              <button className="group flex w-full items-center gap-4 rounded-xl px-4 py-3.5 text-left text-sm font-medium text-[#6d574b] transition-all duration-300 hover:bg-[#fff8ed] hover:text-[#5a3425]">
+              <button onClick={()=>navigate("/admin/products")} className="group flex w-full items-center gap-4 rounded-xl px-4 py-3.5 text-left text-sm font-medium text-[#6d574b] transition-all duration-300 hover:bg-[#fff8ed] hover:text-[#5a3425]">
                 <MdShoppingBag className="text-xl text-[#b8860b] transition-transform group-hover:scale-110" />
                 {menu && <span>E-commerce</span>}
               </button>

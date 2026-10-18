@@ -14,9 +14,10 @@ import Heart from "./components/Heart"
 import Register from "./pages/Register"
 import Login from "./pages/Login"
 import ProductDetails from "./components/ProductDetails"
-import AdminNavbar from "./admin/components/AdminNavbar"
-import Sidebar from "./admin/components/Sidebar"
 import Dashboard from "./admin/pages/Dashboard"
+import Products from "./admin/components/Products"
+import AdminLayout from "./admin/layout/AdminLayout"
+import Analytics from "./admin/components/Analytics"
 function App(){
   return(
     <BrowserRouter>
@@ -66,13 +67,11 @@ function App(){
     <Route path="/register" element={<Register/>}/>
     <Route path="/login" element={<Login/>}/>
     <Route path="/product/:id" element={<ProductDetails/>}/>
-    <Route path="/admin" element={
-      <>
-      <AdminNavbar/>
-      <Sidebar/>
-      <Dashboard/>
-      </>
-    } />
+    <Route path="/admin" element={<AdminLayout />}>
+  <Route index element={<Dashboard />} />
+  <Route path="products" element={<Products />} />
+  <Route path="analytics" element={<Analytics />} />
+</Route>
 
    </Routes>
    </CartProvider>

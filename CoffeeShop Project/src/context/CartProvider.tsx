@@ -14,6 +14,7 @@ export type Product = {
   image: string;
   price: number;
   quantity?: number;
+  category:string;
 };
 
 type CartState = {

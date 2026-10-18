@@ -25,6 +25,7 @@ if (
   const order = {
   id: Date.now(),
   customer: formData,
+  createdAt: new Date().toISOString(),
   products: cart,
 };
 const existingOrders = JSON.parse(

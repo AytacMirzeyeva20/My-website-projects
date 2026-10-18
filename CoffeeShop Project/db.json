@@ -7,9 +7,9 @@
         "Coffee"
       ],
       "image": "https://i.shgcdn.com/f7ed9fd1-70f6-41ce-a8c2-be8092ddb063/-/format/auto/-/preview/3000x3000/-/quality/lighter/",
-      "price": 4.00,
-      "id": 1,
-  "category":"Coffee"
+      "price": 5,
+      "id": "1",
+      "category": "Coffee"
     },
     {
       "title": "Espresso macchiato",
@@ -19,9 +19,9 @@
         "Steamed milk"
       ],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcKD-vj85MtYACcBntpQmk7oYsVYGc6K-VzqwlmpJMwJDMPpULxzDz94A&s=10",
-      "price": 4.90,
-      "id": 2,
-      "category":"Coffee"
+      "price": 4.9,
+      "id": "2",
+      "category": "Coffee"
     },
     {
       "title": "Americano",
@@ -32,9 +32,9 @@
         "Caramel syrup"
       ],
       "image": "https://dropinblog.net/34243353/files/featured/image1-ouxf5.png",
-      "price": 5.90,
-      "id": 3,
-      "category":"Coffee"
+      "price": 5.9,
+      "id": "3",
+      "category": "Coffee"
     },
     {
       "title": "Cappuccino",
@@ -45,9 +45,9 @@
         "Foam"
       ],
       "image": "https://www.acouplecooks.com/wp-content/uploads/2020/10/how-to-make-cappuccino-005.jpg",
-      "price": 6.50,
-      "id": 4,
-      "category":"Coffee"
+      "price": 6.5,
+      "id": "4",
+      "category": "Coffee"
     },
     {
       "title": "Turkish Coffee",
@@ -57,9 +57,9 @@
         "Hot water"
       ],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ4IDFm45GT4TwBxRO-Rx3R8uSGC2nrpSPCplxwQYkcg&s=10",
-      "price": 6.50,
-      "id": 5,
-      "category":"Coffee"
+      "price": 6.5,
+      "id": "5",
+      "category": "Coffee"
     },
     {
       "title": "Iced Latte",
@@ -68,21 +68,21 @@
         "Espresso"
       ],
       "image": "https://anerdcooks.com/wp-content/uploads/2022/10/iced_vanilla_latte6.jpg",
-      "price": 7.90,
-      "id": 6,
-      "category":"Coffee"
+      "price": 7.9,
+      "id": "6",
+      "category": "Coffee"
     },
     {
       "title": "Tea",
       "description": "A warm and refreshing drink with a delicate aroma and soothing, comforting flavor.",
       "ingredients": [
-        "Tea","Cookie"
-        
+        "Tea",
+        "Cookie"
       ],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDAtvdzdqW_pMWh1eWMcWlJ41-g8wKziC2GpCuJPkJ4A&s=10",
       "price": 3.75,
-      "id": 7,
-      "category":"Drinks"
+      "id": "7",
+      "category": "Drinks"
     },
     {
       "title": "Mocha",
@@ -94,8 +94,8 @@
       ],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSejeVr7QtDbaEn25wS4ZhycpCA-XvoEG1sY7Lg8_5ft6Sr9by_9b2_TQhb&s=10",
       "price": 4.75,
-      "id": 8,
-     "category":"Drinks"
+      "id": "8",
+      "category": "Drinks"
     },
     {
       "title": "Hot Chocolate",
@@ -106,8 +106,8 @@
       ],
       "image": "https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fGhvdCUyMGNob2NvbGF0ZXxlbnwwfHwwfHx8MA%3D%3D",
       "price": 3.5,
-      "id": 9,
-      "category":"Drinks"
+      "id": "9",
+      "category": "Drinks"
     },
     {
       "title": "Coffee Cake",
@@ -121,8 +121,8 @@
       ],
       "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/coffee-cake-4d37cac.jpg",
       "price": 5.25,
-      "id": 10,
- "category":"Dessert"
+      "id": "10",
+      "category": "Dessert"
     },
     {
       "title": "Teapot",
@@ -133,20 +133,21 @@
         "Sugar*"
       ],
       "image": "https://images.unsplash.com/photo-1753881543149-38f8365742f9?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHx8",
-      "price": 10.90,
-      "id": 11,
-  "category":"Drinks"
+      "price": 10.9,
+      "id": "11",
+      "category": "Drinks"
     },
     {
       "title": "Watermelon juice",
       "description": "A refreshing blend of fresh fruits, bursting with natural sweetness and vibrant flavor.",
       "ingredients": [
-        "Watermelon","sugar"
+        "Watermelon",
+        "sugar"
       ],
       "image": "https://media.istockphoto.com/id/485524950/photo/glass-of-fresh-watermelon-juice-on-wood.jpg?s=612x612&w=0&k=20&c=RQ7txpdaDYNL_vt-k7lUheTbG8qan5-pb-OHznSx_zg=",
-      "price": 7.90,
-      "id": 12,
-    "category":"Drinks"
+      "price": 7.9,
+      "id": "12",
+      "category": "Drinks"
     },
     {
       "title": "Black Tea",
@@ -156,20 +157,20 @@
       ],
       "image": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHRlYXxlbnwwfHwwfHx8MA%3D%3D",
       "price": 2.75,
-      "id": 13,
-            "category":"Drinks"
-
+      "id": "13",
+      "category": "Drinks"
     },
     {
       "title": "Strawberry juice",
       "description": "An iced latte is espresso poured over ice and cold milk. Sweet syrup is optional, and it is also known as an iced cafe latte.",
       "ingredients": [
-        "Strawberry","sugar"
+        "Strawberry",
+        "sugar"
       ],
       "image": "https://www.cubesnjuliennes.com/wp-content/uploads/2022/09/Strawberry-Juice-Recipe.jpg",
-      "price": 6.90,
-      "id": 14,
-            "category":"Drinks"
+      "price": 6.9,
+      "id": "14",
+      "category": "Drinks"
     },
     {
       "title": "Iced Mocha Latte",
@@ -182,24 +183,8 @@
       ],
       "image": "https://images.unsplash.com/photo-1642647391072-6a2416f048e5?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fGljZWQlMjBtb2NoYSUyMGxhdHRlfGVufDB8fDB8fHww",
       "price": 5,
-      "id": 15,
-            "category":"Coffee"
-    },
-    {
-      "title": "Blended Caramel Coffee",
-      "description": "A blended iced coffee with caramel syrup, milk, and ice, topped with whipped cream and caramel sauce.",
-      "ingredients": [
-        "Coffee",
-        "Ice",
-        "Milk",
-        "Caramel syrup",
-        "Whipped cream*",
-        "Caramel sauce"
-      ],
-      "image": "https://images.unsplash.com/photo-1662047102608-a6f2e492411f?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZnJhcGlubyUyMGNhcmFtZWx8ZW58MHx8MHx8fDA%3D",
-      "price": 5.75,
-      "id": 16,
-            "category":"Coffee"
+      "id": "15",
+      "category": "Coffee"
     },
     {
       "title": "Blended Mocha Coffee",
@@ -213,8 +198,8 @@
       ],
       "image": "https://images.unsplash.com/photo-1530373239216-42518e6b4063?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZnJhcGlubyUyMG1vY2hhfGVufDB8fDB8fHww",
       "price": 5.75,
-      "id": 17,
-            "category":"Coffee"
+      "id": "17",
+      "category": "Coffee"
     },
     {
       "title": "Orange Juice",
@@ -225,8 +210,8 @@
       ],
       "image": "https://www.realsimple.com/thmb/uxSdrO7N288dCYQdYWt0QadMmHI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/WhatHappensWhenYouDrinkOrangeJuiceEveryDay-867c76790b2343298c26c17ebbfc45b7.jpg",
       "price": 3.25,
-      "id": 18,
-            "category":"Drinks"
+      "id": "18",
+      "category": "Drinks"
     },
     {
       "title": "Frozen Lemonade",
@@ -238,8 +223,8 @@
       ],
       "image": "https://images.unsplash.com/photo-1523371054106-bbf80586c38c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGxlbW9uYWRlJTIwd2l0aCUyMGljZXxlbnwwfHwwfHx8MA%3D%3D",
       "price": 7.75,
-      "id": 19,
-            "category":"Drinks"
+      "id": "19",
+      "category": "Drinks"
     },
     {
       "title": "Lemonade",
@@ -251,8 +236,8 @@
       ],
       "image": "https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bGVtb25hZGV8ZW58MHx8MHx8fDA%3D",
       "price": 6.25,
-      "id": 20,
-            "category":"Drinks"
+      "id": "20",
+      "category": "Drinks"
     },
     {
       "title": "Black CoffeeTest",
@@ -261,9 +246,9 @@
         "Coffee"
       ],
       "image": "https://images.unsplash.com/photo-1494314671902-399b18174975?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "price": 3.50,
-      "id": 21,
-            "category":"Coffee"
+      "price": 3.5,
+      "id": "21",
+      "category": "Coffee"
     },
     {
       "title": "Chocolate Dessert",
@@ -274,9 +259,9 @@
         "milk"
       ],
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4bGFcadEXSKsgSxS7sNMPTJ5zs-tHpS6WOR2UPy6GL8HRyKoW59jPK61_&s=10",
-      "price": 5.50,
-      "id": 22,
-            "category":"Dessert"
+      "price": 5.5,
+      "id": "22",
+      "category": "Dessert"
     },
     {
       "title": "Caramel Dessert",
@@ -287,9 +272,9 @@
         "powder bakery",
         "milk"
       ],
-      "price": 6.50,
-      "id": 23,
-            "category":"Dessert"
+      "price": 6.5,
+      "id": "23",
+      "category": "Dessert"
     },
     {
       "title": "Pancake",
@@ -300,9 +285,18 @@
         "powder bakery",
         "milk"
       ],
-      "price": 5.90,
-      "id": 24,
-            "category":"Dessert"
+      "price": 5.9,
+      "id": "24",
+      "category": "Dessert"
+    },
+    {
+      "id": "AHXwq4r1opA",
+      "title": "Cheesecake",
+      "description": "A creamy and delicious cheesecake with a smooth texture and a sweet, buttery crust.",
+      "ingredients": [],
+      "image": "https://www.tasteofhome.com/wp-content/uploads/2025/07/30-Summer-Desserts-That-Are-No-Bake-and-Oh-So-Easy_TOHcom23_27515_P2_MD_03_22_6b.jpg",
+      "category": "Dessert",
+      "price": 6.5
     }
   ],
   "gallery": [
