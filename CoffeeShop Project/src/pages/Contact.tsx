@@ -2,8 +2,47 @@ import { BiLogoGmail } from "react-icons/bi";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdPlace } from "react-icons/md";
 import coffeeVideo from "../video/coffee.mp4";
-
+import { useState, type FormEvent } from "react";
 function Contact(){
+  const [statusMessage, setStatusMessage] = useState("");
+const [isSuccess, setIsSuccess] = useState(false);
+const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+
+  const formData = new FormData(e.currentTarget);
+
+  const message = {
+    id: Date.now(),
+    name: formData.get("name") as string,
+    surname: formData.get("surname") as string,
+    phone: formData.get("phone") as string,
+    subject: formData.get("subject") as string,
+    message: formData.get("message") as string,
+    status: "unread",
+    createdAt: new Date().toISOString(),
+  };
+
+  try {
+    const response = await fetch("http://localhost:3000/messages", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(message),
+    });
+
+    if (!response.ok) {
+      throw new Error("Message could not be sent");
+    }
+setStatusMessage("Message sent successfully!");
+  setIsSuccess(true);
+    e.currentTarget.reset();
+  } catch (error) {
+    console.error("Error sending message:", error);
+   setStatusMessage("Failed to send message. Please try again.");
+   setIsSuccess(false);
+  }
+};
     return(
         <>
 <section className="relative w-full h-screen overflow-hidden dark:bg-black dark:text-white">
@@ -61,7 +100,7 @@ function Contact(){
 
     <div className="grid grid-cols-1 gap-12 md:grid-cols-[1.2fr_1px_0.8fr] md:gap-10">
 
-      <form
+      <form onSubmit={handleSubmit}
         action=""
         className="rounded-2xl bg-[#F8F4EC] dark:bg-gray-900 p-7 shadow-[0_20px_50px_-15px_rgba(0,0,0,0.5)] md:p-9"
       >
@@ -69,11 +108,12 @@ function Contact(){
 
           <div>
             <label className="mb-1.5 block text-xs text-[#8A7259] dark:text-gray-400">
-              Ad
+              Name
             </label>
 
             <input
               type="text"
+              name="name"
               placeholder="Name..."
               className="w-full rounded-lg border border-[#C89666]/30 bg-white dark:bg-gray-800 dark:border-gray-700 px-3.5 py-2.5 text-[15px] text-[#3A2A1C] dark:text-white placeholder:text-[#3A2A1C]/35 dark:placeholder:text-gray-500 outline-none transition-colors focus:border-[#8A5A34]"
             />
@@ -86,6 +126,7 @@ function Contact(){
 
             <input
               type="text"
+              name="surname"
               placeholder="Surname..."
               className="w-full rounded-lg border border-[#C89666]/30 bg-white dark:bg-gray-800 dark:border-gray-700 px-3.5 py-2.5 text-[15px] text-[#3A2A1C] dark:text-white placeholder:text-[#3A2A1C]/35 dark:placeholder:text-gray-500 outline-none transition-colors focus:border-[#8A5A34]"
             />
@@ -100,6 +141,7 @@ function Contact(){
 
           <input
             type="tel"
+            name="phone"
             placeholder="+994507863423"
             className="w-full rounded-lg border border-[#C89666]/30 bg-white dark:bg-gray-800 dark:border-gray-700 px-3.5 py-2.5 text-[15px] text-[#3A2A1C] dark:text-white placeholder:text-[#3A2A1C]/35 dark:placeholder:text-gray-500 outline-none transition-colors focus:border-[#8A5A34]"
           />
@@ -139,7 +181,7 @@ function Contact(){
 
           <textarea
             rows={4}
-            placeholder="Your Message..."
+            placeholder="Your Message..." name="message"
             className="w-full resize-none rounded-lg border border-[#C89666]/30 bg-white dark:bg-gray-800 dark:border-gray-700 px-3.5 py-2.5 text-[15px] text-[#3A2A1C] dark:text-white placeholder:text-[#3A2A1C]/35 dark:placeholder:text-gray-500 outline-none transition-colors focus:border-[#8A5A34]"
           />
         </div>
@@ -150,6 +192,17 @@ function Contact(){
         >
           Send Message
         </button>
+        {statusMessage && (
+  <p
+    className={`mb-4 rounded-lg p-3 text-center ${
+      isSuccess
+        ? "bg-green-100 text-green-700"
+        : "bg-red-100 text-red-700"
+    }`}
+  >
+    {statusMessage}
+  </p>
+)}
       </form>
 
       <div className="hidden bg-[#C89666]/20 dark:bg-amber-400/20 md:block" />

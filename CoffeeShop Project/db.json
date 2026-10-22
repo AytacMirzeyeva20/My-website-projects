@@ -303,26 +303,26 @@
     {
       "id": "1",
       "src": "https://coffeebusiness.com/wp-content/uploads/2019/08/14tenents-pt2.jpg",
-      "title": "Sabah dəmləməsi",
-      "note": "Gündən əvvəl ilk fincan"
+      "title": "Morning brew",
+      "note": "The first cup before the day begins"
     },
     {
       "id": "2",
       "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOLL8vVBu0ydU1hqCZSz97s6xXrNKZN_L9Gbf_1w8rnA&s=10",
-      "title": "Barista masası",
-      "note": "Hər detal əl işidir"
+      "title": "Barista’s Table",
+      "note": "Every detail is handcrafted"
     },
     {
       "id": "3",
       "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTkeCi_wxYS4rykpuk74tgs6vFsZz-DpMO2e_2ApzPqQ&s=10",
-      "title": "Dənələrin seçimi",
-      "note": "Tək mənşəli qovrulma"
+      "title": "Coffee Beans",
+      "note": "Single-origin roasting"
     },
     {
       "id": "4",
       "src": "https://static.gooecloud.com/upload/img/GY569396824781/1_4.jpg?x-oss-process=image/watermark,t_100,g_center,x_100,y_100,image_dXBsb2FkL2ltZy9HWTU2OTM5NjgyNDc4MS93YXRlcm1hcmsucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLFBfMTAw/format,webp/quality,Q_100",
-      "title": "Otağın ovqatı",
-      "note": "İstilik hər küncdə"
+      "title": "Coffee Shop Interior",
+      "note": "Warmth in every corner"
     }
   ],
   "user": [
@@ -332,6 +332,18 @@
       "email": "mirzeyevaa91@gmail.com",
       "password": "Aytac2006",
       "id": "I9tkzDw8UUM"
+    }
+  ],
+  "messages": [
+    {
+      "id": "W2psaVEjDD4",
+      "name": "Aytac",
+      "surname": "Mirzeyeva",
+      "phone": "+994506817618",
+      "subject": "teklif",
+      "message": "You have to add some dessert your menu.",
+      "status": "unread",
+      "createdAt": "2026-10-18T17:58:39.880Z"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

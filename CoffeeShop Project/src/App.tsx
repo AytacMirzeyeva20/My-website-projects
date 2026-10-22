@@ -1,4 +1,4 @@
-import { Routes,Route, BrowserRouter } from "react-router-dom"
+import { Routes,Route, BrowserRouter,Navigate } from "react-router-dom"
 import Navbar from "./components/Navbar"
 import Home from "./pages/Home"
 import Footer from "./components/Footer"
@@ -18,6 +18,8 @@ import Dashboard from "./admin/pages/Dashboard"
 import Products from "./admin/components/Products"
 import AdminLayout from "./admin/layout/AdminLayout"
 import Analytics from "./admin/components/Analytics"
+import Messages from "./admin/components/Messages"
+import AdminLogin from "./admin/pages/AdminLogin"
 function App(){
   return(
     <BrowserRouter>
@@ -67,10 +69,15 @@ function App(){
     <Route path="/register" element={<Register/>}/>
     <Route path="/login" element={<Login/>}/>
     <Route path="/product/:id" element={<ProductDetails/>}/>
-    <Route path="/admin" element={<AdminLayout />}>
+    <Route path="/admin/login" element={<AdminLogin/>} />
+
+    <Route path="/admin" element={
+      localStorage.getItem("isAdminLoggedIn")==="true" ? <AdminLayout />
+    : <Navigate to="/admin/login" replace />}>
   <Route index element={<Dashboard />} />
   <Route path="products" element={<Products />} />
   <Route path="analytics" element={<Analytics />} />
+    <Route path="messages" element={<Messages />} />
 </Route>
 
    </Routes>

@@ -96,17 +96,17 @@ console.log("Orders from localStorage:", orders);
 console.log("Orders chart data:", ordersData);
   return (
     <>
-    <div className="ml-10 mr-5">
+    <div className="ml-10 mr-5  min-h-screen bg-[#fffaf4] p-5 dark:bg-gray-950 ">
       <div className="mb-8">
-        <h1 className="mt-2 text-3xl ml-4 font-bold text-[#4a2c20]">
+        <h1 className="mt-2 text-3xl ml-4 font-bold text-[#4a2c20] dark:text-white">
           Analytics
         </h1>
-        <p className="mt-2 text-sm ml-4 text-[#9a8477]">
+        <p className="mt-2 text-sm ml-4 text-[#9a8477] dark:text-white">
           Monitor your coffee shop performance
         </p>
       </div>
 
-      <div className="rounded-3xl border border-[#eadfd4] bg-white p-6 shadow-[0_8px_25px_rgba(74,44,32,0.06)]">
+      <div className="rounded-3xl border border-[#eadfd4] bg-white p-6 shadow-[0_8px_25px_rgba(74,44,32,0.06)] dark:border-gray-800 dark:bg-gray-900">
         <div className="mb-6">
           <h2 className="text-xl font-bold text-[#4a2c20]">
             Revenue Overview
@@ -130,7 +130,7 @@ console.log("Orders chart data:", ordersData);
 
 
 
-    <div className="mt-6 rounded-3xl border border-[#eadfd4] bg-white p-6 shadow-[0_8px_25px_rgba(74,44,32,0.06)]">
+    <div className="mt-6 rounded-3xl border border-[#eadfd4] bg-white p-6 shadow-[0_8px_25px_rgba(74,44,32,0.06)] dark:border-gray-800 dark:bg-gray-900 ">
   <div className="mb-6">
     <h2 className="text-xl font-bold text-[#4a2c20]">
       Orders Overview
@@ -161,7 +161,7 @@ console.log("Orders chart data:", ordersData);
 </ResponsiveContainer>
 
 </div>
-<div className="mt-6 mb-6 rounded-3xl border border-[#eadfd4] bg-white p-4 shadow-[0_8px_25px_rgba(74,44,32,0.06)]">
+<div className="mt-6 mb-6 rounded-3xl border border-[#eadfd4] bg-white p-4 shadow-[0_8px_25px_rgba(74,44,32,0.06)] dark:border-gray-800 dark:bg-gray-900 ">
 
   <h2 className="text-xl font-bold text-[#4a2c20]">
     Product Categories

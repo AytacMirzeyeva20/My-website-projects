@@ -2,15 +2,16 @@ import StatCard from "../components/StatCards";
 import { MdShoppingCart, MdInventory2,MdPeople,MdAttachMoney,} from "react-icons/md";
 import RecentOrders from "../components/RecentOrders"
 function Dashboard() {
+
   return (
     <>
-    <div className="ml-72 min-h-screen bg-[#fffaf4] p-8">
+    <div className="ml-72 min-h-screen bg-[#fffaf4] p-8 dark:bg-gray-950">
       <div>
-        <h1 className="text-3xl font-bold text-[#4a2c20]">
+        <h1 className="text-3xl font-bold text-[#4a2c20] dark:text-white">
           Welcome back, Admin 👋
         </h1>
 
-        <p className="mt-2 text-[#9a8477]">
+        <p className="mt-2 text-[#9a8477] dark:text-gray-400">
           Here's what's happening with your coffee shop today.
         </p>
       </div>
@@ -21,7 +22,7 @@ function Dashboard() {
         <StatCard title="Customers" value="184"  icon={<MdPeople />} change="+15.4%"/>
         <StatCard title="Revenue" value="$4,280"   icon={<MdAttachMoney />} change="+10.8%" />
       </div>
-      <RecentOrders/>
+      <RecentOrders />
     </div>
    
     </>

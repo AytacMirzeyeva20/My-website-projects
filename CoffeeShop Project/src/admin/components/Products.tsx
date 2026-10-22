@@ -138,9 +138,8 @@ function Products() {
 };
   return (
     <>
-      <div className="px-8 py-8 ml-5">
+      <div className="px-8 py-8 ml-5 dark:bg-gray-950">
 
-  
         <div className="mb-8 flex items-center justify-between">
           <div>
             <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#b8860b]">

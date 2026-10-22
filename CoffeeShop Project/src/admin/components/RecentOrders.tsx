@@ -16,14 +16,20 @@ products:{
 
 }[];
 }
-function RecentOrders(){
+function RecentOrders() {
   const[orders,setOrders]=useState<Order[]>([]);
+  const [search, setSearch] = useState("");
   useEffect(()=>{
   const savedOrders = JSON.parse(
     localStorage.getItem("orders") || "[]"
   );
   setOrders(savedOrders);
   },[])
+  const filteredOrders=orders.filter((order)=>(
+    order.id.toString().includes(search) ||
+    order.customer.name.toLowerCase().includes(search.toLowerCase()) ||
+    order.products.some(product => product.title.toLowerCase().includes(search.toLowerCase()))
+  ))
     return(
         <>
         <div className="mt-8 mr-16 rounded-2xl border border-[#eadfd4] bg-white p-6 shadow-[0_8px_25px_rgba(74,44,32,0.06)]">
@@ -62,7 +68,7 @@ function RecentOrders(){
           </tr>
         </thead>
        <tbody>
-        {orders.map((order)=>(
+        {filteredOrders.map((order)=>(
           <tr className="border-b border-[#f0e7df]">
             <td className="py-4 text-sm font-medium text-[#4a2c20]">
               #{order.id}

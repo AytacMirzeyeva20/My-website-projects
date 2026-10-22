@@ -1,6 +1,7 @@
 import coffeeVideo from "../video/coffee.mp4";
-
+import { useTranslation } from "react-i18next";
 function About(){
+    const { t } = useTranslation();
     return(
         <>
  <section className="relative w-full h-screen overflow-hidden dark:bg-black dark:text-white">
@@ -8,15 +9,15 @@ function About(){
        <div className="absolute inset-0 bg-linear-to-b from-black/70 via-black/50 to-amber-950/80" />
        <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6">
         <span className="text-amber-300 uppercase tracking-[0.3em] text-xs md:text-sm mb-4">
-          Roasted Daily · Brewed With Passion
+          {t("Roasted Daily · Brewed With Passion")}
         </span>
 
         <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-amber-50 tracking-wide">
-          Coffee<span className="text-amber-400">Shop</span>
+          {t("Coffee")}<span className="text-amber-400">{t("Shop")}</span>
         </h1>
 
         <p className="mt-6 max-w-xl text-amber-100/80 text-base md:text-lg">
-        A thoughtful story in every cup. Come discover a warm cup of coffee in a quiet corner.
+       {t("A thoughtful story in every cup. Come discover a warm cup of coffee in a quiet corner.")}
 
         </p>
 
@@ -25,13 +26,13 @@ function About(){
             href="#menu"
             className="border border-amber-400 text-amber-300 uppercase text-sm tracking-widest px-8 py-3 rounded-full transition-all duration-300 hover:bg-amber-400 hover:text-amber-950"
           >
-            Show Menu
+            {t("Show Menu")}
           </a>
           <a
             href="#contact"
             className="bg-amber-400 text-amber-950 uppercase text-sm tracking-widest px-8 py-3 rounded-full transition-all duration-300 hover:bg-amber-300"
           >
-            Contact Us
+            {t("Contact Us")}
           </a>
         </div>
 </div>
@@ -53,33 +54,33 @@ function About(){
           <div className="absolute -bottom-6 -right-6 bg-amber-950 dark:bg-gray-900 text-amber-50 rounded-2xl px-6 py-5 shadow-xl hidden sm:block">
             <p className="font-serif text-3xl text-amber-400">15+</p>
             <p className="text-xs uppercase tracking-widest text-amber-100/80">
-         Years of Experience
+         {t("Years of Experience")}
             </p>
           </div>
         </div>
 
         <div className="dark:text-white">
           <span className="text-amber-600 dark:text-amber-400 uppercase tracking-[0.3em] text-xs font-medium">
-           Our Story
+          {t("Our Story")}
           </span>
 
           <h2 className="font-serif text-4xl md:text-5xl text-amber-950 dark:text-amber-50 mt-4 leading-tight">
-            Passion <span className="text-amber-600 dark:text-amber-400">in </span> Every Cup
+            {t("Passion")} <span className="text-amber-600 dark:text-amber-400">in </span> {t("Every Cup")}
           </h2>
 
           <p className="mt-6 text-amber-900/80 dark:text-gray-300 leading-relaxed">
-           Since 2009, CoffeeShop has been carefully selecting the finest coffee beans and crafting every cup with passion and skill. Our goal is not simply to sell coffee — it is to provide every visitor with a warm, welcoming atmosphere that feels like home.
+           {t("Since 2009, CoffeeShop has been carefully selecting the finest coffee beans and crafting every cup with passion and skill. Our goal is not simply to sell coffee — it is to provide every visitor with a warm, welcoming atmosphere that feels like home.")}
 
           </p>
 
           <div className="mt-8 grid grid-cols-2 gap-6">
             <div className="border-l-2 border-amber-400 pl-4">
               <p className="font-serif text-2xl text-amber-950 dark:text-amber-50">100%</p>
-              <p className="text-sm text-amber-900/70 dark:text-gray-400">Natural Beans </p>
+              <p className="text-sm text-amber-900/70 dark:text-gray-400">{t("Natural Beans")} </p>
             </div>
             <div className="border-l-2 border-amber-400 pl-4">
               <p className="font-serif text-2xl text-amber-950 dark:text-amber-50">50k+</p>
-              <p className="text-sm text-amber-900/70 dark:text-gray-400">Satisfied Customer</p>
+              <p className="text-sm text-amber-900/70 dark:text-gray-400">{t("Satisfied Customer")}</p>
             </div>
           </div>
 
@@ -87,7 +88,7 @@ function About(){
             href="#menu"
             className="inline-block mt-10 bg-amber-950 dark:bg-gray-900 text-amber-50 uppercase text-sm tracking-widest px-8 py-3 rounded-full transition-all duration-300 hover:bg-amber-800"
           >
-       Discover Our Menu
+       {t("Discover Our Menu")}
           </a>
         </div>
       </div>

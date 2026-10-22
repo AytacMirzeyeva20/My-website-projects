@@ -10,14 +10,13 @@ function Sidebar() {
     <>
  <section
   className={`fixed left-0 top-0 z-50 flex h-screen flex-col
-  border-r border-[#eadfd4]
+  border-r border-[#eadfd4] dark:bg-gray-950
   ${menu ? "w-72" : "w-20"}
   bg-[#fffaf4]
   shadow-[0_8px_25px_rgba(74,44,32,0.08)]
   transition-all duration-300`}
 >
-        <div className="flex h-24 items-center justify-between border-b border-[#f0e7df] px-6">
-
+        <div className="flex h-24 items-center justify-between border-b border-[#f0e7df] px-6 dark:border-gray-800 ">
           <div className="flex items-center gap-2">
             <span className="text-amber-500 text-3xl transition-transform duration-300 hover:rotate-12">
               <DiCoffeescript />
@@ -25,11 +24,11 @@ function Sidebar() {
 
           {menu && (
   <div>
-    <h1 className="font-serif text-xl font-bold tracking-wide text-[#4a2c20]">
+    <h1 className="font-serif text-xl font-bold tracking-wide text-[#4a2c20] dark:text-white">
       Elora <span className="text-[#b8860b]">Coffee</span>
     </h1>
 
-    <p className="mt-0.5 text-[10px] uppercase tracking-[0.25em] text-[#9a8477]">
+    <p className="mt-0.5 text-[10px] uppercase tracking-[0.25em] text-[#9a8477] dark:text-gray-400">
       Admin Panel
     </p>
   </div>
@@ -37,7 +36,7 @@ function Sidebar() {
           </div>
 
           <button onClick={() => menuOpen(prev => !prev)}
-            className="flex h-9 w-9 items-center justify-center rounded-xl border border-[#eadfd4] text-[#5a3425] transition-all duration-300 hover:border-[#b8860b] hover:bg-[#fff8ed] hover:text-[#b8860b]">
+            className="flex h-9 w-9 items-center justify-center rounded-xl border border-[#eadfd4] text-[#5a3425] transition-all duration-300 hover:border-[#b8860b] hover:bg-[#fff8ed] hover:text-[#b8860b] dark:border-gray-700 dark:text-gray-300 dark:hover:bg-gray-800 ">
             <IoMenu className="text-xl" />
           </button>
 
@@ -45,14 +44,14 @@ function Sidebar() {
 
         <div className="px-4 py-7">
 
-          <p className="mb-4 px-3 text-[10px] font-bold uppercase tracking-[0.25em] text-[#b5a196]">
+          <p className="mb-4 px-3 text-[10px] font-bold uppercase tracking-[0.25em] text-[#b5a196] dark:text-white">
             Main Menu
           </p>
 
           <ul className="space-y-2">
 
             <li>
-              <button onClick={()=>navigate("/admin")}  className="group flex w-full items-center gap-4 rounded-xl bg-[#5a3425] px-4 py-3.5 text-left text-sm font-medium text-white shadow-[0_8px_20px_rgba(90,52,37,0.18)] transition-all duration-300">
+              <button onClick={()=>navigate("/admin")}  className="group flex w-full items-center gap-4 rounded-xl bg-[#5a3425] px-4 py-3.5 text-left text-sm font-medium text-white shadow-[0_8px_20px_rgba(90,52,37,0.18)] transition-all duration-300 hover:text-[#dark:border-gray-700 dark:text-[#b8860b] dark:hover:bg-gray-800b8860b] ">
                 <MdDashboard className="text-xl text-[#d4a72c]" />
                
               {menu && <span>Dashboard</span>}
@@ -60,28 +59,28 @@ function Sidebar() {
             </li>
 
             <li>
-              <button  onClick={()=>navigate("/admin/analytics")} className="group flex w-full items-center gap-4 rounded-xl px-4 py-3.5 text-left text-sm font-medium text-[#6d574b] transition-all duration-300 hover:bg-[#fff8ed] hover:text-[#5a3425]">
+              <button  onClick={()=>navigate("/admin/analytics")} className="group flex w-full items-center gap-4 rounded-xl px-4 py-3.5 text-left text-sm font-medium text-[#6d574b] transition-all duration-300 hover:bg-[#fff8ed] hover:text-[#5a3425]  hover:text-[#dark:border-gray-700 dark:text-[#b8860b] dark:hover:bg-gray-800b8860b]">
                 <MdAnalytics className="text-xl text-[#b8860b] transition-transform group-hover:scale-110" />
              {menu && <span>Analytics</span>}
               </button>
             </li>
 
             <li>
-              <button className="group flex w-full items-center gap-4 rounded-xl px-4 py-3.5 text-left text-sm font-medium text-[#6d574b] transition-all duration-300 hover:bg-[#fff8ed] hover:text-[#5a3425]">
+              <button className="group flex w-full items-center gap-4 rounded-xl px-4 py-3.5 text-left text-sm font-medium text-[#6d574b] transition-all duration-300 hover:bg-[#fff8ed] hover:text-[#5a3425] hover:text-[#dark:border-gray-700 dark:text-[#b8860b] dark:hover:bg-gray-800b8860b] ">
                 <MdPeople className="text-xl text-[#b8860b] transition-transform group-hover:scale-110" />
                {menu && <span>Users</span>}
               </button>
             </li>
 
             <li>
-              <button onClick={()=>navigate("/admin/products")} className="group flex w-full items-center gap-4 rounded-xl px-4 py-3.5 text-left text-sm font-medium text-[#6d574b] transition-all duration-300 hover:bg-[#fff8ed] hover:text-[#5a3425]">
+              <button onClick={()=>navigate("/admin/products")} className="group flex w-full items-center gap-4 rounded-xl px-4 py-3.5 text-left text-sm font-medium text-[#6d574b] transition-all duration-300 hover:bg-[#fff8ed] hover:text-[#5a3425] hover:text-[#dark:border-gray-700 dark:text-[#b8860b] dark:hover:bg-gray-800b8860b] ">
                 <MdShoppingBag className="text-xl text-[#b8860b] transition-transform group-hover:scale-110" />
                 {menu && <span>E-commerce</span>}
               </button>
             </li>
 
             <li>
-              <button className="group flex w-full items-center gap-4 rounded-xl px-4 py-3.5 text-left text-sm font-medium text-[#6d574b] transition-all duration-300 hover:bg-[#fff8ed] hover:text-[#5a3425]">
+              <button onClick={()=>navigate("/admin/messages")} className="group flex w-full items-center gap-4 rounded-xl px-4 py-3.5 text-left text-sm font-medium text-[#6d574b] transition-all duration-300 hover:bg-[#fff8ed] hover:text-[#5a3425] hover:text-[#dark:border-gray-700 dark:text-[#b8860b] dark:hover:bg-gray-800b8860b] ">
                 <MdMessage className="text-xl text-[#b8860b] transition-transform group-hover:scale-110" />
                {menu && <span>Messages</span>}
 
@@ -92,7 +91,7 @@ function Sidebar() {
             </li>
 
             <li>
-              <button className="group flex w-full items-center gap-4 rounded-xl px-4 py-3.5 text-left text-sm font-medium text-[#6d574b] transition-all duration-300 hover:bg-[#fff8ed] hover:text-[#5a3425]">
+              <button className="group flex w-full items-center gap-4 rounded-xl px-4 py-3.5 text-left text-sm font-medium text-[#6d574b] transition-all duration-300 hover:bg-[#fff8ed] hover:text-[#5a3425] hover:text-[#dark:border-gray-700 dark:text-[#b8860b] dark:hover:bg-gray-800b8860b] ">
                 <MdSettings className="text-xl text-[#b8860b] transition-transform duration-300 group-hover:rotate-45" />
               {menu && <span>Settings</span>}
               </button>

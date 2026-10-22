@@ -19,8 +19,8 @@ name: "Espresso",
     img: "https://i.pinimg.com/474x/7a/29/df/7a29dfc903d98c6ba13b687ef1fa1d1a.jpg",
     },
     {
-name: "Turkish Coffee",
-    desc: "Traditional and romantic",
+name: "Coffee",
+    desc: "Bold and romantic",
     price: 6,
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGywDLxNFfe-xGACPvJ_9oDsw859CC_IJau13NuHxSGT4GL4IHaXsleeTX&s=10",
     },
@@ -81,7 +81,7 @@ name: "Turkish Coffee",
           <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-amber-950/30">
             <img
               src="https://coffeebusiness.com/wp-content/uploads/2019/08/14tenents-pt2.jpg"
-              alt="Qəhvəxananın daxili görünüşü"
+              alt="Interior view of the coffee shop"
               className="w-full h-120 object-cover grayscale-15 hover:grayscale-0 transition-all duration-500"
             />
             <div className="absolute inset-0 bg-linear-to-t from-amber-950/40 via-transparent to-transparent" />
@@ -112,11 +112,11 @@ name: "Turkish Coffee",
           <div className="mt-8 grid grid-cols-2 gap-6">
             <div className="border-l-2 border-amber-400 pl-4">
               <p className="font-serif text-2xl text-amber-950 dark:text-amber-50">100%</p>
-              <p className="text-sm text-amber-900/70 dark:text-gray-400">Natural Beans </p>
+              <p className="text-sm text-amber-900/70 dark:text-gray-400">{t("Natural Beans")} </p>
             </div>
             <div className="border-l-2 border-amber-400 pl-4">
               <p className="font-serif text-2xl text-amber-950 dark:text-amber-50">50k+</p>
-              <p className="text-sm text-amber-900/70 dark:text-gray-400">Satisfied Customer</p>
+              <p className="text-sm text-amber-900/70 dark:text-gray-400">{t("Satisfied Customer")}</p>
             </div>
           </div>
 
@@ -124,7 +124,7 @@ name: "Turkish Coffee",
             href="#menu"
             className="inline-block mt-10 bg-amber-950 dark:bg-amber-900 text-amber-50 uppercase text-sm tracking-widest px-8 py-3 rounded-full transition-all duration-300 hover:bg-amber-800"
           >
-       Discover Our Menu
+      {t("Discover Our Menu")}
           </a>
         </div>
       </div>
@@ -134,7 +134,7 @@ name: "Turkish Coffee",
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <span className="text-amber-400 uppercase tracking-[0.3em] text-xs font-medium">
-            Taste & Pleasure
+            {t("Taste & Pleasure")}
           </span>
           <h2 className="font-serif text-4xl md:text-5xl text-amber-50 mt-4">
             Our <span className="text-amber-400">Menu</span>
